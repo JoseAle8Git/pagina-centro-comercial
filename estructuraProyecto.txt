@@ -20,3 +20,35 @@ Vamos a intentar seguir esta estructura para el proyecto.
 También vamos a intentar dejar aquí por escrito las tareas de cada uno de nosotros, lo que tenemos que crear e ideas para la página web.
 Si estamos trabajando en algo que no hemos tocado intentar dejarlo claro por aquí en este archivo diciendo que estas tranajando en esto y cuando lo termineis ponerlo como tarea terminada.
 Os parece bien trabajar así?
+
+Lista de Tareas:
+
+1. Diseño (HTML + CSS)
+- [ ] Diseñar la plantilla base HTML (cabecera, navegación, pie de página).
+- [ ] Aplicar estilos en style.css (fuentes, colores, botones, responsive).
+- [ ] Asegurar que el diseño sea responsive (que se vea bien en móvil y escritorio).
+- [ ] Crear un carrusel/banner en index.html con imágenes destacadas del centro.
+- [ ] Crear tarjetas o secciones para las categorías principales: tiendas, restaurantes, ocio, etc.
+
+2. Contenido de secciones
+- [ ] index.html: bienvenida y enlaces a las secciones principales.
+- [ ] tiendas.html: listado de tiendas con categorías (moda, tecnología, etc.).
+- [ ] restaurantes.html: listado de restaurantes con descripción y tipo de comida.
+- [ ] cine.html: cartelera y horarios (puede ser estático o simulado con JS).
+- [ ] ocio.html: actividades del centro (eventos, parque infantil, etc.).
+- [ ] sobreNosotros.html: historia, misión y visión del centro.
+- [ ] contacto.html: formulario de contacto y ubicación en Google Maps.
+- [ ] registro.html: formulario de registro (nombre, edad, email, etc.).
+- [ ] avisoLegal.html: texto legal, privacidad, cookies, etc.
+
+3. Funcionalidades (JavaScript)
+- [ ] Validar formularios (contacto y registro).
+- [ ] Hacer un menú de navegación dinámico (por ejemplo, destacar la página activa).
+- [ ] Añadir animaciones suaves al hacer scroll o al pasar el ratón.
+- [ ] (Opcional) Filtro de tiendas por categoría.
+- [ ] (Opcional) Simulación de horarios del cine que cambian al seleccionar un día.
+
+4. Extras y mejoras
+- [ ] Crear una página 404.html para errores de navegación.
+- [ ] Crear una página iniciarSesion.html si decidís implementar login.
+- [ ] Comprobar accesibilidad básica (etiquetas alt, contraste, etc.).
