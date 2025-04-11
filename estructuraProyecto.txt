@@ -15,3 +15,8 @@ centro-comercial ---
                     |---ej.html ...
                     |---README
                     |---LICENSE
+
+Vamos a intentar seguri esta estructura para el proyecto.
+También vamos a intentar dejar aquí por escrito las tareas de cada uno de nosotros, lo que tenemos que crear e ideas para la página web.
+Si estamos trabajando en algo que no hemos tocado intentar dejarlo claro por aquí en este archivo diciendo que estas tranajando en esto y cuando lo termineis ponerlo como tarea terminada.
+Os parece bien trabajar así?
