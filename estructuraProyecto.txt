@@ -1,0 +1,17 @@
+Mirad cómo podemos estructurar el proyecto:
+
+centro-comercial ---
+                    |---images-----
+                    |              |---img1
+                    |              |---img2
+                    |              |---img3
+                    |
+                    |---assets-----
+                    |              |---css---
+                    |              |         |---style.css
+                    |              |---js----
+                    |              |         |---codigo.js
+                    |---index.html
+                    |---ej.html ...
+                    |---README
+                    |---LICENSE
