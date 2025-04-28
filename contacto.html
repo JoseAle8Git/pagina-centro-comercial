@@ -1,29 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <title>Mall of America - Contacto</title>
 </head>
-<body>
-Contacto
-¿Tienes dudas, sugerencias o necesitas ayuda? ¡Estamos aquí para atenderte!
+<body class="ContactoBody">
+    <header class="ContactoHeader">
+        <h1 class="ContactoTitulo">Contacto</h1>
+        <p class="ContactoSubtitulo">¿Tienes dudas, sugerencias o necesitas ayuda? ¡Estamos aquí para ti!</p>
+    </header>
 
-<img src="images/contacto_mall_of_america.jpg" alt="Imagen de contacto en Mall of America">
+    <section class="ContactoFormularioSeccion">
+        <h2 class="ContactoFormularioTitulo">Formulario de contacto</h2>
+        <form action="/enviar" method="post" class="ContactoFormulario">
+            <label for="nombre" class="ContactoLabel">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" class="ContactoInput" required>
 
-Información de contacto:
+            <label for="apellidos" class="ContactoLabel">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" class="ContactoInput" required>
 
-Teléfono: +1 952-883-8800
-Correo electrónico: info@mallofamerica.com
-Dirección: 60 E Broadway, Bloomington, MN 55425, Estados Unidos
+            <label for="direccion" class="ContactoLabel">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" class="ContactoInput" required>
 
+            <label for="email" class="ContactoLabel">Correo electrónico:</label>
+            <input type="email" id="email" name="email" class="ContactoInput" required>
 
-Formulario de contacto:
+            <label for="confirmaEmail" class="ContactoLabel">Confirma correo electrónico:</label>
+            <input type="email" id="confirmaEmail" name="confirmaEmail" class="ContactoInput" required>
 
-    Nombre: <input type="text" name="nombre">
-    Correo electrónico: <input type="email" name="correo">
-    Mensaje: <input type="textarea" name="mensaje" rows="4" cols="50">
-    <input type="submit" value="Enviar">
-</form>
+            <label for="telefono" class="ContactoLabel">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" class="ContactoInput" required>
+
+            <label for="comentarios" class="ContactoLabel">Comentarios:</label>
+            <textarea id="comentarios" name="comentarios" rows="4" class="ContactoTextarea" required></textarea>
+
+            <button type="submit" class="ContactoBoton">Enviar</button>
+        </form>
+    </section>
 </body>
 </html>
