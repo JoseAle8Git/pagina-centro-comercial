@@ -1,0 +1,92 @@
+/* Fuente y reset */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #f9f9f9, #eaf3ff);
+    color: #333;
+}
+
+/* Apartado contacto */
+.ContactoHeader {
+    background: linear-gradient(120deg, #007BFF, #0056b3);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 5px solid #ffffff;
+}
+
+.ContactoTitulo {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.ContactoSubtitulo {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Formulario Contacto */
+.ContactoFormularioSeccion {
+    background: white;
+    margin: 40px auto;
+    padding: 40px;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.ContactoFormularioTitulo {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+.ContactoLabel {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+.ContactoInput, 
+.ContactoTextarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+.ContactoInput:focus, 
+.ContactoTextarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.ContactoBoton {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(120deg, #007BFF, #0056b3);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.ContactoBoton:hover {
+    background: linear-gradient(120deg, #0056b3, #003f7f);
+}
