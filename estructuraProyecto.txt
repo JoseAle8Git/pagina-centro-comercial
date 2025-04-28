@@ -52,3 +52,20 @@ Lista de Tareas:
 - [ ] Crear una página 404.html para errores de navegación.
 - [ ] Crear una página iniciarSesion.html si decidís implementar login.
 - [ ] Comprobar accesibilidad básica (etiquetas alt, contraste, etc.).
+
+// Tareas:
+Jose:
+    barra de navegación general para todas las páginas
+    index.html
+    mapa.html
+    cine.html
+    registro.html
+Ali:
+    footer para todas las páginas web
+    restaurantes.html
+    tiendas.html
+    contacto.html
+Alberto:
+    avisoLegal.html
+    sobreNosotros.html
+    ocio.html
