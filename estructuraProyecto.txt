@@ -56,16 +56,16 @@ Lista de Tareas:
 // Tareas:
 Jose:
     barra de navegación general para todas las páginas
-    index.html
-    mapa.html
-    cine.html
-    registro.html
+    index.html = video, presentación, imágenes en carrusel
+    mapa.html = mapa interactivo con infomación de las ubicaciones del centro comercial
+    cine.html = horarios, situación, salas, cafetería, boton de compra que lleve a la tienda real
+    registro.html = formulario de registro
 Ali:
     footer para todas las páginas web
-    restaurantes.html
-    tiendas.html
-    contacto.html
+    restaurantes.html = 15 restaurantes con sus logos y al hacer clic se abra un modal con una imágen del restaurante, texto con información y enlace a la web original
+    tiendas.html = 15 tiendas con sus logos y al hacer clic se abra un modal con una imágen del establecimiento, texto con infomración y enlace a la web original
+    contacto.html = formulario de envío, que solicite nombre, apellidos, dirección, email, confirma email, teléfono y comentarios. Todos los datos son obligatorios.
 Alberto:
     avisoLegal.html
-    sobreNosotros.html
-    ocio.html
+    sobreNosotros.html = horarios, dirección, datos del contacto, información de transporte público, información del parking, enlace a mapa.html y un iframe con mapa de localización, info del wifi, etc... 
+    ocio.html = 5 establecimientos de ocio con sus logos y al hacer clic se abra una modal con un iframe con un video, texto con información y enlace a la web original
