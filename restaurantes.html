@@ -1,26 +1,886 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mall of America - Restaurantes</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mall of America – Restaurantes</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Tu CSS personalizado -->
+    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body>
-Restaurantes en Mall of America
-Después de un día de compras y diversión, disfruta de una increíble oferta gastronómica para todos los gustos.
 
-<img src="images/restaurantes_mall_of_america.jpg" alt="Imagen de restaurantes en Mall of America">
+<body class="d-flex flex-column min-vh-100">
 
-Opciones para todos los paladares:
+    <!-- Header -->
+    <header class="bg-light py-5 text-center">
+        <div class="container">
+            <h1 class="display-5 fw-bold">Restaurantes en Mall of America</h1>
+            <p class="lead">Descubre la variedad gastronómica que tenemos para ti.</p>
+        </div>
+    </header>
 
-Shake Shack: hamburguesas gourmet y batidos deliciosos.
-Rainforest Café: restaurante temático rodeado de una jungla tropical.
-Crave American Kitchen & Sushi Bar: cocina americana contemporánea y sushi.
-Bubba Gump Shrimp Co.: especialidad en mariscos al estilo de "Forrest Gump".
-Cantina Laredo: auténtica comida mexicana moderna.
+    <main class="container my-5 restaurantesContent">
 
+        <!-- 1. McDonald's -->
+        <div class="card mb-4 shadow-sm">
+            <div class="row g-0 align-items-center">
+                <div class="col-md-4 text-center p-4">
+                    <img src="assets/imagenes/mcdonalds-logo.png" alt="McDonald's" class="img-fluid mb-3"
+                        style="max-height: 120px;" />
+                    <h4 class="fw-bold">McDonald's</h4>
+                </div>
+                <div class="col-md-8 p-4">
+                    <p>La cadena de hamburguesas más famosa del mundo. Disfruta de Big Macs, McNuggets y una gran
+                        variedad de bebidas.</p>
+                    <h6 class="mt-3">Menú destacado:</h6>
+                    <ul>
+                        <li>Big Mac</li>
+                        <li>McNuggets (6 piezas)</li>
+                        <li>McFlurry Oreo</li>
+                    </ul>
+                    <button type="button" class="btn btn-outline-primary mt-2" data-bs-toggle="modal"
+                        data-bs-target="#modalMcDonald">
+                        Ver carta completa
+                    </button>
+                </div>
+            </div>
+        </div>
 
-Consulta la lista completa de restaurantes en el sitio oficial:
-<a href="https://www.mallofamerica.com/dining" target="_blank">Ver Restaurantes</a>
+        <!-- 2. Burger King -->
+        <div class="card mb-4 shadow-sm">
+            <div class="row g-0 align-items-center">
+                <div class="col-md-4 text-center p-4">
+                    <img src="assets/imagenes/burgerking-logo.png" alt="Burger King" class="img-fluid mb-3"
+                        style="max-height: 120px;" />
+                    <h4 class="fw-bold">Burger King</h4>
+                </div>
+                <div class="col-md-8 p-4">
+                    <p>Sabor flame-grilled en hamburguesas, pollo crujiente y menú variado para todos los gustos.</p>
+                    <h6 class="mt-3">Menú destacado:</h6>
+                    <ul>
+                        <li>Whopper</li>
+                        <li>Chicken Fries</li>
+                        <li>Onion Rings</li>
+                    </ul>
+                    <button type="button" class="btn btn-outline-primary mt-2" data-bs-toggle="modal"
+                        data-bs-target="#modalBurgerKing">
+                        Ver carta completa
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. KFC -->
+        <div class="card mb-4 shadow-sm">
+            <div class="row g-0 align-items-center">
+                <div class="col-md-4 text-center p-4">
+                    <img src="assets/imagenes/kfc-logo.png" alt="KFC" class="img-fluid mb-3"
+                        style="max-height: 120px;" />
+                    <h4 class="fw-bold">KFC</h4>
+                </div>
+                <div class="col-md-8 p-4">
+                    <p>Pollo frito al estilo original del Coronel Sanders, ¡un clásico del sabor!</p>
+                    <h6 class="mt-3">Menú destacado:</h6>
+                    <ul>
+                        <li>Bucket de 8 piezas</li>
+                        <li>Popcorn Chicken</li>
+                        <li>Alitas picantes</li>
+                    </ul>
+                    <button type="button" class="btn btn-outline-primary mt-2" data-bs-toggle="modal"
+                        data-bs-target="#modalKFC">
+                        Ver carta completa
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. Subway -->
+        <div class="card mb-4 shadow-sm">
+            <div class="row g-0 align-items-center">
+                <div class="col-md-4 text-center p-4">
+                    <img src="assets/imagenes/subway-logo.png" alt="Subway" class="img-fluid mb-3"
+                        style="max-height: 120px;" />
+                    <h4 class="fw-bold">Subway</h4>
+                </div>
+                <div class="col-md-8 p-4">
+                    <p>Sándwiches y wraps personalizados, preparados al momento con ingredientes frescos.</p>
+                    <h6 class="mt-3">Menú destacado:</h6>
+                    <ul>
+                        <li>Subway Club</li>
+                        <li>Veggie Delite</li>
+                        <li>Cookies</li>
+                    </ul>
+                    <button type="button" class="btn btn-outline-primary mt-2" data-bs-toggle="modal"
+                        data-bs-target="#modalSubway">
+                        Ver carta completa
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. Pizza Hut -->
+        <div class="card mb-4 shadow-sm">
+            <div class="row g-0 align-items-center">
+                <div class="col-md-4 text-center p-4">
+                    <img src="assets/imagenes/pizzahut-logo.png" alt="Pizza Hut" class="img-fluid mb-3"
+                        style="max-height: 120px;" />
+                    <h4 class="fw-bold">Pizza Hut</h4>
+                </div>
+                <div class="col-md-8 p-4">
+                    <p>Pizzas clásicas y creaciones únicas. ¡Comparte en familia o con amigos!</p>
+                    <h6 class="mt-3">Menú destacado:</h6>
+                    <ul>
+                        <li>Pizza Pepperoni</li>
+                        <li>Pasta Alfredo</li>
+                        <li>Breadsticks</li>
+                    </ul>
+                    <button type="button" class="btn btn-outline-primary mt-2" data-bs-toggle="modal"
+                        data-bs-target="#modalPizzaHut">
+                        Ver carta completa
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6. Taco Bell -->
+        <div class="card mb-4 shadow-sm">
+            <div class="row g-0 align-items-center">
+                <div class="col-md-4 text-center p-4">
+                    <img src="assets/imagenes/tacobell-logo.png" alt="Taco Bell" class="img-fluid mb-3"
+                        style="max-height: 120px;" />
+                    <h4 class="fw-bold">Taco Bell</h4>
+                </div>
+                <div class="col-md-8 p-4">
+                    <p>Sabores mexicanos con un twist: tacos, burritos y mucho más para todos los paladares.</p>
+                    <h6 class="mt-3">Menú destacado:</h6>
+                    <ul>
+                        <li>Crunchy Taco</li>
+                        <li>Burrito Supreme</li>
+                        <li>Chalupa</li>
+                    </ul>
+                    <button type="button" class="btn btn-outline-primary mt-2" data-bs-toggle="modal"
+                        data-bs-target="#modalTacoBell">
+                        Ver carta completa
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 7. Starbucks -->
+        <div class="card mb-4 shadow-sm">
+            <div class="row g-0 align-items-center">
+                <div class="col-md-4 text-center p-4">
+                    <img src="assets/imagenes/starbucks-logo.png" alt="Starbucks" class="img-fluid mb-3"
+                        style="max-height: 120px;" />
+                    <h4 class="fw-bold">Starbucks</h4>
+                </div>
+                <div class="col-md-8 p-4">
+                    <p>Café de especialidad, bebidas y repostería en un ambiente acogedor.</p>
+                    <h6 class="mt-3">Menú destacado:</h6>
+                    <ul>
+                        <li>Caramel Macchiato</li>
+                        <li>Pumpkin Spice Latte</li>
+                        <li>Muffin de arándanos</li>
+                    </ul>
+                    <button type="button" class="btn btn-outline-primary mt-2" data-bs-toggle="modal"
+                        data-bs-target="#modalStarbucks">
+                        Ver carta completa
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 8. Panda Express -->
+        <div class="card mb-4 shadow-sm">
+            <div class="row g-0 align-items-center">
+                <div class="col-md-4 text-center p-4">
+                    <img src="assets/imagenes/pandaexpress-logo.png" alt="Panda Express" class="img-fluid mb-3"
+                        style="max-height: 120px;" />
+                    <h4 class="fw-bold">Panda Express</h4>
+                </div>
+                <div class="col-md-8 p-4">
+                    <p>Deliciosos platos de comida china-americana para llevar o disfrutar en nuestro local.</p>
+                    <h6 class="mt-3">Menú destacado:</h6>
+                    <ul>
+                        <li>Orange Chicken</li>
+                        <li>Chow Mein</li>
+                        <li>Fried Rice</li>
+                    </ul>
+                    <button type="button" class="btn btn-outline-primary mt-2" data-bs-toggle="modal"
+                        data-bs-target="#modalPandaExpress">
+                        Ver carta completa
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 9. Chipotle -->
+        <div class="card mb-4 shadow-sm">
+            <div class="row g-0 align-items-center">
+                <div class="col-md-4 text-center p-4">
+                    <img src="assets/imagenes/chipotle-logo.png" alt="Chipotle" class="img-fluid mb-3"
+                        style="max-height: 120px;" />
+                    <h4 class="fw-bold">Chipotle</h4>
+                </div>
+                <div class="col-md-8 p-4">
+                    <p>Burritos, bowls y tacos con ingredientes frescos y personalizables.</p>
+                    <h6 class="mt-3">Menú destacado:</h6>
+                    <ul>
+                        <li>Burrito Bowl</li>
+                        <li>Sofritas Tacos</li>
+                        <li>Chips & Guacamole</li>
+                    </ul>
+                    <button type="button" class="btn btn-outline-primary mt-2" data-bs-toggle="modal"
+                        data-bs-target="#modalChipotle">
+                        Ver carta completa
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 10. Olive Garden -->
+        <div class="card mb-4 shadow-sm">
+            <div class="row g-0 align-items-center">
+                <div class="col-md-4 text-center p-4">
+                    <img src="assets/imagenes/olivegarden-logo.png" alt="Olive Garden" class="img-fluid mb-3"
+                        style="max-height: 120px;" />
+                    <h4 class="fw-bold">Olive Garden</h4>
+                </div>
+                <div class="col-md-8 p-4">
+                    <p>Auténtica cocina italiana: pasta, ensaladas y sopas ilimitadas.</p>
+                    <h6 class="mt-3">Menú destacado:</h6>
+                    <ul>
+                        <li>Pasta Alfredo</li>
+                        <li>Minestrone</li>
+                        <li>Bruschetta</li>
+                    </ul>
+                    <button type="button" class="btn btn-outline-primary mt-2" data-bs-toggle="modal"
+                        data-bs-target="#modalOliveGarden">
+                        Ver carta completa
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 11. Applebee's -->
+        <div class="card mb-4 shadow-sm">
+            <div class="row g-0 align-items-center">
+                <div class="col-md-4 text-center p-4">
+                    <img src="assets/imagenes/applebees-logo.png" alt="Applebee's" class="img-fluid mb-3"
+                        style="max-height: 120px;" />
+                    <h4 class="fw-bold">Applebee's</h4>
+                </div>
+                <div class="col-md-8 p-4">
+                    <p>Restaurante de estilo familiar con platos americanos clásicos y bebidas especiales.</p>
+                    <h6 class="mt-3">Menú destacado:</h6>
+                    <ul>
+                        <li>Riblets</li>
+                        <li>Quesadilla Burger</li>
+                        <li>Mojito</li>
+                    </ul>
+                    <button type="button" class="btn btn-outline-primary mt-2" data-bs-toggle="modal"
+                        data-bs-target="#modalApplebees">
+                        Ver carta completa
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 12. The Dream Factory -->
+        <div class="card mb-4 shadow-sm">
+            <div class="row g-0 align-items-center">
+                <div class="col-md-4 text-center p-4">
+                    <img src="assets/imagenes/cheesecakefactory-logo.png" alt="The Dream Factory" class="img-fluid mb-3"
+                        style="max-height: 120px;" />
+                    <h4 class="fw-bold">The Dream Factory</h4>
+                </div>
+                <div class="col-md-8 p-4">
+                    <p>Grandes porciones, menú variado y los famosos cheesecakes de postre.</p>
+                    <h6 class="mt-3">Menú destacado:</h6>
+                    <ul>
+                        <li>Avocado Egg Rolls</li>
+                        <li>Chicken Piccata</li>
+                        <li>Cheesecake Original</li>
+                    </ul>
+                    <button type="button" class="btn btn-outline-primary mt-2" data-bs-toggle="modal"
+                        data-bs-target="#modalCheesecakeFactory">
+                        Ver carta completa
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 13. TGI Fridays -->
+        <div class="card mb-4 shadow-sm">
+            <div class="row g-0 align-items-center">
+                <div class="col-md-4 text-center p-4">
+                    <img src="assets/imagenes/tgifridays-logo.png" alt="TGI Fridays" class="img-fluid mb-3"
+                        style="max-height: 120px;" />
+                    <h4 class="fw-bold">TGI Fridays</h4>
+                </div>
+                <div class="col-md-8 p-4">
+                    <p>Ambiente animado con clásicos americanos, cócteles y happy hour.</p>
+                    <h6 class="mt-3">Menú destacado:</h6>
+                    <ul>
+                        <li>Jack Daniel's Burger</li>
+                        <li>Loaded Potato Skins</li>
+                        <li>Margarita</li>
+                    </ul>
+                    <button type="button" class="btn btn-outline-primary mt-2" data-bs-toggle="modal"
+                        data-bs-target="#modalTGIFridays">
+                        Ver carta completa
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 14. Wendy's -->
+        <div class="card mb-4 shadow-sm">
+            <div class="row g-0 align-items-center">
+                <div class="col-md-4 text-center p-4">
+                    <img src="assets/imagenes/wendys-logo.png" alt="Wendy's" class="img-fluid mb-3"
+                        style="max-height: 120px;" />
+                    <h4 class="fw-bold">Wendy's</h4>
+                </div>
+                <div class="col-md-8 p-4">
+                    <p>Hamburguesas frescas, ensaladas y Frosty, la merienda perfecta.</p>
+                    <h6 class="mt-3">Menú destacado:</h6>
+                    <ul>
+                        <li>Dave's Single</li>
+                        <li>Chili</li>
+                        <li>Frosty de vainilla</li>
+                    </ul>
+                    <button type="button" class="btn btn-outline-primary mt-2" data-bs-toggle="modal"
+                        data-bs-target="#modalWendys">
+                        Ver carta completa
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 15. Dunkin' -->
+        <div class="card mb-4 shadow-sm">
+            <div class="row g-0 align-items-center">
+                <div class="col-md-4 text-center p-4">
+                    <img src="assets/imagenes/dunkin-logo.png" alt="Dunkin'" class="img-fluid mb-3"
+                        style="max-height: 120px;" />
+                    <h4 class="fw-bold">Dunkin'</h4>
+                </div>
+                <div class="col-md-8 p-4">
+                    <p>Donuts, café y snacks para el día a día sobre la marcha.</p>
+                    <h6 class="mt-3">Menú destacado:</h6>
+                    <ul>
+                        <li>Glazed Donut</li>
+                        <li>Latte</li>
+                        <li>Breakfast Sandwich</li>
+                    </ul>
+                    <button type="button" class="btn btn-outline-primary mt-2" data-bs-toggle="modal"
+                        data-bs-target="#modalDunkin">
+                        Ver carta completa
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Modales -->
+
+    <!-- Modal McDonald's -->
+    <div class="modal fade" id="modalMcDonald" tabindex="-1" aria-labelledby="modalMcDonaldLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalMcDonaldLabel">McDonald's – Menú y detalles</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="assets/imagenes/mcdonalds-logo.png" alt="McDonald's" class="img-fluid mb-4"
+                        style="max-height: 100px;" />
+                    <p class="lead">
+                        McDonald's es la cadena de comida rápida más conocida del mundo. Desde 1955 sirviendo sus
+                        icónicas hamburguesas, patatas fritas y postres. Comprometidos con ingredientes de calidad y
+                        opciones para toda la familia.
+                    </p>
+                    <h6 class="mt-4">Menú completo</h6>
+                    <ul class="text-start">
+                        <li><strong>Hamburguesas:</strong> Big Mac, Quarter Pounder, Cheeseburger</li>
+                        <li><strong>Pollo:</strong> McNuggets (6, 10, 20), McChicken</li>
+                        <li><strong>Postres:</strong> McFlurry Oreo, Sundae, Apple Pie</li>
+                        <li><strong>Bebidas:</strong> Coca-Cola, Fanta, Café, Batidos</li>
+                        <li><strong>Opciones Saludables:</strong> Ensalada César, Agua Mineral</li>
+                    </ul>
+                    <a href="https://www.mcdonalds.com" target="_blank" class="btn btn-primary mt-3">Ir a la web
+                        oficial</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Burger King -->
+    <div class="modal fade" id="modalBurgerKing" tabindex="-1" aria-labelledby="modalBurgerKingLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalBurgerKingLabel">Burger King – Menú y detalles</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="assets/imagenes/burgerking-logo.png" alt="Burger King" class="img-fluid mb-4"
+                        style="max-height: 100px;" />
+                    <p class="lead">
+                        Burger King, famoso por su “flame-grilled” Whopper, ofrece una amplia variedad de opciones:
+                        sándwiches de pollo, patatas sazonadas, postres y menús especiales.
+                    </p>
+                    <h6 class="mt-4">Menú completo</h6>
+                    <ul class="text-start">
+                        <li><strong>Clásicos:</strong> Whopper, Double Whopper, Bacon King</li>
+                        <li><strong>Pollo:</strong> Chicken Fries, BK Chicken Sandwich</li>
+                        <li><strong>Aperitivos:</strong> Onion Rings, Mozzarella Sticks</li>
+                        <li><strong>Postres:</strong> Hershey’s Sundae Pie, Frosty</li>
+                        <li><strong>Bebidas:</strong> Refrescos, Café, Batidos</li>
+                    </ul>
+                    <a href="https://www.burgerking.com" target="_blank" class="btn btn-primary mt-3">Ir a la web
+                        oficial</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal KFC -->
+    <div class="modal fade" id="modalKFC" tabindex="-1" aria-labelledby="modalKFCLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalKFCLabel">KFC – Menú y detalles</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="assets/imagenes/kfc-logo.png" alt="KFC" class="img-fluid mb-4"
+                        style="max-height: 100px;" />
+                    <p class="lead">
+                        KFC ofrece su auténtico pollo frito al estilo Coronel Sanders, con recetas secretas y especias
+                        únicas que han conquistado paladares en todo el mundo.
+                    </p>
+                    <h6 class="mt-4">Menú completo</h6>
+                    <ul class="text-start">
+                        <li>Bucket de 8 piezas</li>
+                        <li>Popcorn Chicken</li>
+                        <li>Alitas picantes</li>
+                        <li>Wrap de pollo</li>
+                        <li>Patatas Deluxe</li>
+                    </ul>
+                    <a href="https://www.kfc.com" target="_blank" class="btn btn-primary mt-3">Ir a la web oficial</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Subway -->
+    <div class="modal fade" id="modalSubway" tabindex="-1" aria-labelledby="modalSubwayLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalSubwayLabel">Subway – Menú y detalles</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="assets/imagenes/subway-logo.png" alt="Subway" class="img-fluid mb-4"
+                        style="max-height: 100px;" />
+                    <p class="lead">
+                        Subway te permite crear tu sándwich o wrap al momento con ingredientes frescos y a tu gusto,
+                        ofreciendo opciones para todos los paladares.
+                    </p>
+                    <h6 class="mt-4">Menú completo</h6>
+                    <ul class="text-start">
+                        <li>Subway Club</li>
+                        <li>Italiana</li>
+                        <li>Veggie Delite</li>
+                        <li>Wraps variados</li>
+                        <li>Galletas y cookies</li>
+                    </ul>
+                    <a href="https://www.subway.com" target="_blank" class="btn btn-primary mt-3">Ir a la web
+                        oficial</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Pizza Hut -->
+    <div class="modal fade" id="modalPizzaHut" tabindex="-1" aria-labelledby="modalPizzaHutLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalPizzaHutLabel">Pizza Hut – Menú y detalles</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="assets/imagenes/pizzahut-logo.png" alt="Pizza Hut" class="img-fluid mb-4"
+                        style="max-height: 100px;" />
+                    <p class="lead">
+                        Pizza Hut, la cadena de pizzerías más grande del mundo, ofrece pizzas clásicas, pastas y
+                        entrantes para compartir con familia y amigos.
+                    </p>
+                    <h6 class="mt-4">Menú completo</h6>
+                    <ul class="text-start">
+                        <li>Pizza Pepperoni</li>
+                        <li>Pizza Supreme</li>
+                        <li>BBQ Chicken Pizza</li>
+                        <li>Pasta Alfredo</li>
+                        <li>Breadsticks</li>
+                    </ul>
+                    <a href="https://www.pizzahut.com" target="_blank" class="btn btn-primary mt-3">Ir a la web
+                        oficial</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Taco Bell -->
+    <div class="modal fade" id="modalTacoBell" tabindex="-1" aria-labelledby="modalTacoBellLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTacoBellLabel">Taco Bell – Menú y detalles</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="assets/imagenes/tacobell-logo.png" alt="Taco Bell" class="img-fluid mb-4"
+                        style="max-height: 100px;" />
+                    <p class="lead">
+                        Taco Bell reinventa la comida mexicana con un toque americano: tacos, burritos, chalupas y
+                        nachos llenos de sabor.
+                    </p>
+                    <h6 class="mt-4">Menú completo</h6>
+                    <ul class="text-start">
+                        <li>Crunchy Taco</li>
+                        <li>Burrito Supreme</li>
+                        <li>Chalupa</li>
+                        <li>Nachos BellGrande</li>
+                        <li>Quesadilla</li>
+                    </ul>
+                    <a href="https://www.tacobell.com" target="_blank" class="btn btn-primary mt-3">Ir a la web
+                        oficial</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Starbucks -->
+    <div class="modal fade" id="modalStarbucks" tabindex="-1" aria-labelledby="modalStarbucksLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalStarbucksLabel">Starbucks – Menú y detalles</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="assets/imagenes/starbucks-logo.png" alt="Starbucks" class="img-fluid mb-4"
+                        style="max-height: 100px;" />
+                    <p class="lead">
+                        Starbucks, la cafetería de especialidad líder, ofrece granos de alta calidad, bebidas
+                        artesanales y repostería fresca.
+                    </p>
+                    <h6 class="mt-4">Menú completo</h6>
+                    <ul class="text-start">
+                        <li>Caramel Macchiato</li>
+                        <li>Pumpkin Spice Latte</li>
+                        <li>Latte</li>
+                        <li>Frappuccino</li>
+                        <li>Muffin de arándanos</li>
+                    </ul>
+                    <a href="https://www.starbucks.com" target="_blank" class="btn btn-primary mt-3">Ir a la web
+                        oficial</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Panda Express -->
+    <div class="modal fade" id="modalPandaExpress" tabindex="-1" aria-labelledby="modalPandaExpressLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalPandaExpressLabel">Panda Express – Menú y detalles</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="assets/imagenes/pandaexpress-logo.png" alt="Panda Express" class="img-fluid mb-4"
+                        style="max-height: 100px;" />
+                    <p class="lead">
+                        Panda Express trae platos de comida china-americana con sabores intensos y recetas exclusivas.
+                    </p>
+                    <h6 class="mt-4">Menú completo</h6>
+                    <ul class="text-start">
+                        <li>Orange Chicken</li>
+                        <li>Chow Mein</li>
+                        <li>Fried Rice</li>
+                        <li>Beijing Beef</li>
+                        <li>Spring Rolls</li>
+                    </ul>
+                    <a href="https://www.pandaexpress.com" target="_blank" class="btn btn-primary mt-3">Ir a la web
+                        oficial</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Chipotle -->
+    <div class="modal fade" id="modalChipotle" tabindex="-1" aria-labelledby="modalChipotleLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalChipotleLabel">Chipotle – Menú y detalles</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="assets/imagenes/chipotle-logo.png" alt="Chipotle" class="img-fluid mb-4"
+                        style="max-height: 100px;" />
+                    <p class="lead">
+                        Chipotle ofrece burritos, bowls y tacos con ingredientes frescos y personalizables al gusto.
+                    </p>
+                    <h6 class="mt-4">Menú completo</h6>
+                    <ul class="text-start">
+                        <li>Burrito Bowl</li>
+                        <li>Sofritas Tacos</li>
+                        <li>Chips & Guacamole</li>
+                        <li>Quesadilla</li>
+                        <li>Bebidas embotelladas</li>
+                    </ul>
+                    <a href="https://www.chipotle.com" target="_blank" class="btn btn-primary mt-3">Ir a la web
+                        oficial</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Olive Garden -->
+    <div class="modal fade" id="modalOliveGarden" tabindex="-1" aria-labelledby="modalOliveGardenLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalOliveGardenLabel">Olive Garden – Menú y detalles</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="assets/imagenes/olivegarden-logo.png" alt="Olive Garden" class="img-fluid mb-4"
+                        style="max-height: 100px;" />
+                    <p class="lead">
+                        Olive Garden es reconocido por su auténtica cocina italiana: pasta hecha a mano, sopas y
+                        ensaladas ilimitadas.
+                    </p>
+                    <h6 class="mt-4">Menú completo</h6>
+                    <ul class="text-start">
+                        <li>Pasta Alfredo</li>
+                        <li>Minestrone</li>
+                        <li>Bruschetta</li>
+                        <li>Lasagna</li>
+                        <li>Ensalada & Sopa ilimitadas</li>
+                    </ul>
+                    <a href="https://www.olivegarden.com" target="_blank" class="btn btn-primary mt-3">Ir a la web
+                        oficial</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Applebee's -->
+    <div class="modal fade" id="modalApplebees" tabindex="-1" aria-labelledby="modalApplebeesLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalApplebeesLabel">Applebee's – Menú y detalles</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="assets/imagenes/applebees-logo.png" alt="Applebee's" class="img-fluid mb-4"
+                        style="max-height: 100px;" />
+                    <p class="lead">
+                        Applebee's ofrece un ambiente familiar con platos americanos clásicos, cócteles y promociones
+                        especiales diarias.
+                    </p>
+                    <h6 class="mt-4">Menú completo</h6>
+                    <ul class="text-start">
+                        <li>Riblets</li>
+                        <li>Quesadilla Burger</li>
+                        <li>Chicken Tenders</li>
+                        <li>Loaded Nachos</li>
+                        <li>Mojito & Margaritas</li>
+                    </ul>
+                    <a href="https://www.applebees.com" target="_blank" class="btn btn-primary mt-3">Ir a la web
+                        oficial</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal The Dream Factory -->
+    <div class="modal fade" id="modalCheesecakeFactory" tabindex="-1" aria-labelledby="modalCheesecakeFactoryLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCheesecakeFactoryLabel">The Dream Factory – Menú y detalles</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="assets/imagenes/cheesecakefactory-logo.png" alt="The Dream Factory" class="img-fluid mb-4"
+                        style="max-height: 100px;" />
+                    <p class="lead">
+                        The Cheesecake Factory, apodada “The Dream Factory”, ofrece porciones generosas, un extenso menú
+                        y sus famosos cheesecakes de postre.
+                    </p>
+                    <h6 class="mt-4">Menú completo</h6>
+                    <ul class="text-start">
+                        <li>Avocado Egg Rolls</li>
+                        <li>Chicken Piccata</li>
+                        <li>Factory Nachos</li>
+                        <li>Cobb Salad</li>
+                        <li>Cheesecake Original</li>
+                    </ul>
+                    <a href="https://www.thecheesecakefactory.com" target="_blank" class="btn btn-primary mt-3">Ir a la
+                        web oficial</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal TGI Fridays -->
+    <div class="modal fade" id="modalTGIFridays" tabindex="-1" aria-labelledby="modalTGIFridaysLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTGIFridaysLabel">TGI Fridays – Menú y detalles</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="assets/imagenes/tgifridays-logo.png" alt="TGI Fridays" class="img-fluid mb-4"
+                        style="max-height: 100px;" />
+                    <p class="lead">
+                        TGI Fridays ofrece un ambiente animado con clásicos americanos, cócteles artesanales y happy
+                        hour diario.
+                    </p>
+                    <h6 class="mt-4">Menú completo</h6>
+                    <ul class="text-start">
+                        <li>Jack Daniel's Burger</li>
+                        <li>Loaded Potato Skins</li>
+                        <li>Baby Back Ribs</li>
+                        <li>Mozzarella Sticks</li>
+                        <li>Margarita</li>
+                    </ul>
+                    <a href="https://www.tgifridays.com" target="_blank" class="btn btn-primary mt-3">Ir a la web
+                        oficial</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Wendy's -->
+    <div class="modal fade" id="modalWendys" tabindex="-1" aria-labelledby="modalWendysLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalWendysLabel">Wendy's – Menú y detalles</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="assets/imagenes/wendys-logo.png" alt="Wendy's" class="img-fluid mb-4"
+                        style="max-height: 100px;" />
+                    <p class="lead">
+                        Wendy's es famosa por sus hamburguesas hechas con carne fresca, ensaladas y su clásico Frosty
+                        como postre.
+                    </p>
+                    <h6 class="mt-4">Menú completo</h6>
+                    <ul class="text-start">
+                        <li>Dave's Single</li>
+                        <li>Chili</li>
+                        <li>Frosty de vainilla</li>
+                        <li>Spicy Chicken Sandwich</li>
+                        <li>Baked Potato</li>
+                    </ul>
+                    <a href="https://www.wendys.com" target="_blank" class="btn btn-primary mt-3">Ir a la web
+                        oficial</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Dunkin' -->
+    <div class="modal fade" id="modalDunkin" tabindex="-1" aria-labelledby="modalDunkinLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalDunkinLabel">Dunkin' – Menú y detalles</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="assets/imagenes/dunkin-logo.png" alt="Dunkin'" class="img-fluid mb-4"
+                        style="max-height: 100px;" />
+                    <p class="lead">
+                        Dunkin' ofrece donuts recién horneados, café, desayunos y snacks para acompañar tu día desde
+                        primera hora.
+                    </p>
+                    <h6 class="mt-4">Menú completo</h6>
+                    <ul class="text-start">
+                        <li>Glazed Donut</li>
+                        <li>Latte</li>
+                        <li>Breakfast Sandwich</li>
+                        <li>Bagel</li>
+                        <li>Iced Coffee</li>
+                    </ul>
+                    <a href="https://www.dunkin.com" target="_blank" class="btn btn-primary mt-3">Ir a la web
+                        oficial</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer común -->
+    <footer class="bg-dark text-white mt-auto pt-4 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>Mall of America</h5>
+                    <p>El mayor centro comercial con tiendas, ocio y restaurantes.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="contacto.html" class="text-white text-decoration-none">Contacto</a></li>
+                        <li><a href="avisolegal.html" class="text-white text-decoration-none">Aviso Legal</a></li>
+                        <li><a href="visitanos.html" class="text-white text-decoration-none">Cómo llegar</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Síguenos</h5>
+                    <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+            <div class="text-center mt-3 border-top pt-3">
+                <small>&copy; 2025 Mall of America. Todos los derechos reservados.</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
