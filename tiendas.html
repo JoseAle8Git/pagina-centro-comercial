@@ -1,26 +1,265 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>Mall of America - Tiendas</title>
-</head>
-<body>
-Tiendas en Mall of America
-Explora más de 500 tiendas que ofrecen las mejores marcas nacionales e internacionales en moda, tecnología, deportes, belleza y mucho más.
+    <link rel="stylesheet" href="assets/css/style.css">
 
-<img src="images/tiendas_mall_of_america.jpg" alt="Imagen de tiendas en Mall of America">
+  </head>
+  <body>
 
-Algunas de nuestras tiendas destacadas:
-
-Apple Store: tecnología de última generación.
-Nordstrom: moda de lujo para toda la familia.
-Levi's® Store: la icónica marca de vaqueros.
-Sephora: belleza, maquillaje y cuidado personal.
-LEGO® Store: diversión creativa para todas las edades.
+    <div class="tiendasHeader">
+      <h1>Tiendas en Mall of America</h1>
+    </div>
 
 
-Descubre la lista completa de tiendas en el siguiente enlace:
-<a href="https://www.mallofamerica.com/shopping" target="_blank">Ver todas las tiendas</a>
-</body>
+    <div class="tiendasIntro">
+      <p>
+        Explora más de 500 tiendas que ofrecen las mejores marcas nacionales e
+        internacionales en moda, tecnología, deportes, belleza y mucho más.
+      </p>
+      <img
+        src="images/tiendas_mall_of_america.jpg"
+        alt="Imagen de tiendas en Mall of America"
+      />
+    </div>
+
+    <!-- Contenido principal con logos -->
+    <div class="tiendasContent">
+      <h2>Algunas de nuestras tiendas destacadas:</h2>
+      <div class="tiendaLogos">
+        <img
+          src="assets/imagenes/apple-logo.png"
+          alt="Apple Store"
+          class="tiendaLogo"
+          onclick="openModal('modalApple')"
+        />
+        <img
+          src="assets/imagenes/nordstrom-logo.png"
+          alt="Nordstrom"
+          class="tiendaLogo"
+          onclick="openModal('modalNordstrom')"
+        />
+        <img
+          src="assets/imagenes/levis-logo.png"
+          alt="Levi's® Store"
+          class="tiendaLogo"
+          onclick="openModal('modalLevis')"
+        />
+        <img
+          src="assets/imagenes/Sephora_logo.png"
+          alt="Sephora"
+          class="tiendaLogo"
+          onclick="openModal('modalSephora')"
+        />
+        <img
+          src="assets/imagenes/lego-logo.png"
+          alt="LEGO® Store"
+          class="tiendaLogo"
+          onclick="openModal('modalLego')"
+        />
+        <img
+          src="logos/nike.png"
+          alt="Nike"
+          class="tiendaLogo"
+          onclick="openModal('modalNike')"
+        />
+      </div>
+      <p>
+        Descubre la lista completa de tiendas en el siguiente enlace:
+        <a
+          href="https://www.mallofamerica.com/shopping"
+          target="_blank"
+          >Ver todas las tiendas</a
+        >
+      </p>
+    </div>
+
+    <!-- MODALES -->
+
+    <!-- Modal para Apple Store -->
+    <div id="modalApple" class="tiendaModal">
+      <div class="tiendaModalContent">
+        <span
+          class="tiendaClose"
+          onclick="closeModal('modalApple')"
+          >&times;</span
+        >
+        <h2>Apple Store</h2>
+        <img
+          src="assets/imagenes/apple-logo.png"
+          alt="Apple Store"
+          class="tiendaModalImage"
+        />
+        <p class="tiendaModalText">
+          Explora tecnología de vanguardia, dispositivos innovadores y un
+          servicio excepcional en la Apple Store.
+        </p>
+        <a
+          href="https://www.apple.com"
+          target="_blank"
+          class="tiendaModalLink"
+          >Visita la web oficial</a
+        >
+      </div>
+    </div>
+
+    <!-- Modal para Nordstrom -->
+    <div id="modalNordstrom" class="tiendaModal">
+      <div class="tiendaModalContent">
+        <span
+          class="tiendaClose"
+          onclick="closeModal('modalNordstrom')"
+          >&times;</span
+        >
+        <h2>Nordstrom</h2>
+        <img
+          src="assets/imagenes/nordstrom-logo.png"
+          alt="Nordstrom"
+          class="tiendaModalImage"
+        />
+        <p class="tiendaModalText">
+          Descubre moda de lujo, tendencias exclusivas y una amplia variedad
+          en Nordstrom.
+        </p>
+        <a
+          href="https://www.nordstrom.com"
+          target="_blank"
+          class="tiendaModalLink"
+          >Visita la web oficial</a
+        >
+      </div>
+    </div>
+
+    <!-- Modal para Levi's® Store -->
+    <div id="modalLevis" class="tiendaModal">
+      <div class="tiendaModalContent">
+        <span
+          class="tiendaClose"
+          onclick="closeModal('modalLevis')"
+          >&times;</span
+        >
+        <h2>Levi's® Store</h2>
+        <img
+          src="assets/imagenes/levis-logo.png"
+          alt="Levi's® Store"
+          class="tiendaModalImage"
+        />
+        <p class="tiendaModalText">
+          Conoce la icónica marca de vaqueros y su nueva colección en el
+          Levi's® Store.
+        </p>
+        <a
+          href="https://www.levi.com"
+          target="_blank"
+          class="tiendaModalLink"
+          >Visita la web oficial</a
+        >
+      </div>
+    </div>
+
+    <!-- Modal para Sephora -->
+    <div id="modalSephora" class="tiendaModal">
+      <div class="tiendaModalContent">
+        <span
+          class="tiendaClose"
+          onclick="closeModal('modalSephora')"
+          >&times;</span
+        >
+        <h2>Sephora</h2>
+        <img
+          src="assets/imagenes/Sephora_logo.png"
+          alt="Sephora"
+          class="tiendaModalImage"
+        />
+        <p class="tiendaModalText">
+          Descubre lo último en belleza, maquillaje y cuidado personal en
+          Sephora.
+        </p>
+        <a
+          href="https://www.sephora.com"
+          target="_blank"
+          class="tiendaModalLink"
+          >Visita la web oficial</a
+        >
+      </div>
+    </div>
+
+    <!-- Modal para LEGO® Store -->
+    <div id="modalLego" class="tiendaModal">
+      <div class="tiendaModalContent">
+        <span
+          class="tiendaClose"
+          onclick="closeModal('modalLego')"
+          >&times;</span
+        >
+        <h2>LEGO® Store</h2>
+        <img
+          src="assets/imagenes/lego-logo.png"
+          alt="LEGO® Store"
+          class="tiendaModalImage"
+        />
+        <p class="tiendaModalText">
+          Disfruta de la creatividad, diversión y productos exclusivos en la
+          LEGO® Store.
+        </p>
+        <a
+          href="https://store.lego.com"
+          target="_blank"
+          class="tiendaModalLink"
+          >Visita la web oficial</a
+        >
+      </div>
+    </div>
+
+    <!-- Modal para Nike -->
+    <div id="modalNike" class="tiendaModal">
+      <div class="tiendaModalContent">
+        <span
+          class="tiendaClose"
+          onclick="closeModal('modalNike')"
+          >&times;</span
+        >
+        <h2>Nike</h2>
+        <img
+          src="images/nike_store.jpg"
+          alt="Nike"
+          class="tiendaModalImage"
+        />
+        <p class="tiendaModalText">
+          Explora innovación y diseño deportivo en la tienda oficial de Nike.
+        </p>
+        <a
+          href="https://www.nike.com"
+          target="_blank"
+          class="tiendaModalLink"
+          >Visita la web oficial</a
+        >
+      </div>
+    </div>
+
+    <script>
+      function openModal(modalId) {
+        document.getElementById(modalId).style.display = "block";
+      }
+
+      function closeModal(modalId) {
+        document.getElementById(modalId).style.display = "none";
+      }
+
+      // Opcional: Cerrar el modal al clicar fuera del contenido
+      window.onclick = function (event) {
+        let modals = document.getElementsByClassName("tiendaModal");
+        for (let i = 0; i < modals.length; i++) {
+          if (event.target === modals[i]) {
+            modals[i].style.display = "none";
+          }
+        }
+      };
+    </script>
+  </body>
 </html>
