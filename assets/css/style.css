@@ -13,6 +13,88 @@ body {
   color: #333;
 }
 
+/*   ---index.html---   */
+/*   ---Header princiapl---   */
+.h1-header-principal {
+  font-size: 2rem;
+}
+.container-video-oresentacion {
+  max-width: 800px;
+}
+@media screen and (min-width: 480px) {
+  .h1-header-principal {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .h1-header-principal {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .h1-header-principal {
+    font-size: 4rem;
+  }
+}
+/*   ---Primer carrusel---   */
+.main_container {
+  background-color: #e4e5e6;
+  padding-top: 20px;
+}
+.img-first-carousel {
+  border-radius: 15px;
+  box-shadow: 0 0 15px #000;
+}
+.figcaption-container {
+  background-color: #0007;
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #000;
+  margin: auto;
+}
+.h5-first-carousel {
+  font-size: 1rem !important;
+  font-weight: 900
+}
+.paragraph-first-carousel {
+  font-weight: 100 !important;
+  font-size: 0.8rem;
+}
+.links-first-carousel {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold !important;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+@media screen and (min-width: 480px) {
+  .h5-first-carousel {
+    font-size: 1.2rem !important;
+  }
+  .paragraph-first-carousel {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .h5-first-carousel {
+    font-size: 1.5rem !important;
+  }
+  .paragraph-first-carousel {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .h5-first-carousel {
+    font-size: 1.8rem !important;
+  }
+  .paragraph-first-carousel {
+    font-size: 1.2rem;
+  }
+}
+
 /* Apartado contacto */
 .ContactoHeader {
   background: linear-gradient(120deg, #007BFF, #0056b3);
