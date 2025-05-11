@@ -1,25 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Metadatos -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mall of America - Centro Comercial">
+    <meta name="keywords" content="Mall of America, centro comercial, compras, entretenimiento">
+    <meta name="author" content="Jose Alejandro, Alireza Atai, Alberto Magencio">
+    <!-- Titulo -->
     <title>Mall of America</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/imagenes/logoCentroComercial.png" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Boostrap Icons -->
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-Mall of America
-Bienvenidos al centro comercial más grande de Estados Unidos: el Mall of America, ubicado en Bloomington, Minnesota. Con más de 520 tiendas, docenas de restaurantes y una increíble variedad de atracciones, ofrece una experiencia única de compras, ocio y entretenimiento para toda la familia.
-
-<img src="images/mall_of_america.jpg" alt="Imagen del Mall of America">
-
-¿Qué encontrarás aquí?
-
-Más de 500 tiendas de moda, tecnología y decoración.
-Nickelodeon Universe®, el parque de atracciones interior más grande de EE. UU.
-SEA LIFE® Aquarium con túnel submarino de tiburones.
-Restaurantes para todos los gustos y presupuestos.
-Eventos especiales durante todo el año.
-
-
-¡Descubre un mundo de compras y diversión en un solo lugar!
+    <main class="container-fluid main_container">
+        <section class="container-fluid">
+            <header class="container text-center">
+                <h1 class="fw-bold mb-3 h1-header-principal">Bienvenido a Mall of America</h1>
+                <p class="lead">Descubre todo lo que puedes vivir, desde eventos especiales hasta tiendas únicas.<br>
+                ¡Una experiencia completa para toda la familia!</p>
+            </header>
+        </section>
+        <section class="container text-center">
+            <h2>Descúbrenos!</h2>
+            <div class="aspect-ratio ratio-16x9 mx-auto">
+                <iframe class="video-presentacion" src="https://www.youtube.com/embed/ZXfF2Sj7kms?si=ZeQpCM9cJ4xmFzRA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section id="carouselExampleCaptions" class="carousel slide">
+            <nav class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </nav>
+            <article class="carousel-inner">
+                <figure class="carousel-item active figure-first-carousel pt-4">
+                    <img src="assets/imagenes/todoBaileGraduacion.png" class="d-block mx-auto img-fluid img-first-carousel" alt="Imágne que representa la graduación de los estudiantes">
+                    <figcaption class="carousel-caption p-0 text-center figcaption-container">
+                        <h5 class="mb-0 h5-first-carousel">Todo lo relacionado sobre el baile de graduación</h5>
+                        <p class="mb-0 paragraph-first-carousel">Prepárate para la noche de tu vida!</p>
+                        <a class="links-first-carousel" target="_blank" href="https://www.mallofamerica.com/prom">Más información ></a>
+                    </figcaption>
+                </figure>
+                <figure class="carousel-item figure-first-carousel pt-4">
+                    <img src="assets/imagenes/diaMadre.png" class="d-block mx-auto img-fluid img-first-carousel" alt="Imágen que representa un chico con su madre">
+                    <figcaption class="carousel-caption p-0 text-center figcaption-container">
+                        <h5 class="mb-0 h5-first-carousel">Disfruta del día de la madre</h5>
+                        <p class="mb-0 paragraph-first-carousel">Hazle un regalo a la persona más importante en su día</p>
+                        <a class="links-first-carousel" target="_blank" href="https://mallofamerica.com/mothersday?_gl=1*1s8erx4*_ga*MTE4NjY4NDU5MS4xNzQyODAzODE4*_ga_M7CEG347TT*czE3NDY4OTg2MDQkbzEzJGcxJHQxNzQ2ODk5MTUxJGo2MCRsMCRoMA..">Más información ></a>
+                    </figcaption>
+                </figure>
+                <figure class="carousel-item figure-first-carousel pt-4">
+                    <img src="assets/imagenes/buscaEmpleo.png" class="d-block mx-auto img-fluid img-first-carousel" alt="Imágen que representa a dos chicos para la búsqueda de empleo">
+                    <figcaption class="carousel-caption p-0 text-center figcaption-container">
+                        <h5 class="mb-0 h5-first-carousel">Empleo en Mall of America</h5>
+                        <p class="mb-0 paragraph-first-carousel">¡Anímate a trabajar en Mall of America!</p>
+                        <a class="links-first-carousel" target="_blank" href="https://mallofamerica.com/jobs?_gl=1*h6gve5*_ga*MTE4NjY4NDU5MS4xNzQyODAzODE4*_ga_M7CEG347TT*czE3NDY4OTg2MDQkbzEzJGcxJHQxNzQ2ODk5NzgyJGo2MCRsMCRoMA..">Más información ></a>
+                    </figcaption>
+                </figure>
+                <figure class="carousel-item figure-first-carousel pt-4">
+                    <img src="assets/imagenes/ganaPuntos.png" class="d-block mx-auto img-fluid img-first-carousel" alt="Imágen que representa a dos niños en una atracción">
+                    <figcaption class="carousel-caption p-0 text-center figcaption-container">
+                        <h5 class="mb-0 h5-first-carousel">Gana puntos con Moa Insiders®</h5>
+                        <p class="mb-0 paragraph-first-carousel">Obtenga viajes grátis MOA Insiders Premium</p>
+                        <a class="links-first-carousel" target="_blank" href="https://www.mallofamerica.com/insiders">Más información ></a>
+                    </figcaption>
+                </figure>
+            </article>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+        <section class="container container-cartas">
+            <div class="row g-4 text-center">
+                <article class="col-12 col-md-6 col-lg-4">
+                    <div class="flip-card card-1 aparecer">
+                        <section class="front">
+                            <h3 class="h3-cartas">Socios hoteleros</h3>
+                        </section>
+                        <section class="back">
+                            <p>Descubre ofertas y paquetes exclusivos</p>
+                            <a href="https://reservations.mallofamerica.com/site/welcome/14709/mall-of-america-preferred-hotels-special-packages-rates?_gl=1*1rsak97*_ga*MTE4NjY4NDU5MS4xNzQyODAzODE4*_ga_M7CEG347TT*czE3NDY5MDczMDckbzE0JGcxJHQxNzQ2OTA3NDY4JGo2MCRsMCRoMA..&_ga=2.22853947.1276638419.1746885491-1186684591.1742803818" target="_blank">Reservar ahora ></a>
+                        </section>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 col-lg-4">
+                    <div class="flip-card card-2 aparecer">
+                        <section class="front">
+                            <h3 class="h3-cartas">Universo Nickelodeon®</h3>
+                        </section>
+                        <section class="back">
+                            <p>Docenas de atracciones + tus personajes favoritos</p>
+                            <a href="https://nickelodeonuniverse.com/home/?_gl=1*zc5s3y*_ga*MTE4NjY4NDU5MS4xNzQyODAzODE4*_ga_M7CEG347TT*czE3NDY5MDczMDckbzE0JGcxJHQxNzQ2OTA3NDMyJGoxNCRsMCRoMA.." target="_blank">Más información ></a>
+                        </section>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 col-lg-4">
+                    <div class="flip-card card-3 aparecer">
+                        <section class="front">
+                            <h3 class="h3-cartas">Recién abierto</h3>
+                        </section>
+                        <section class="back">
+                            <p>Activar</p>
+                            <a href="https://mallofamerica.com/shopping/new?_gl=1*1cehcdo*_ga*MTE4NjY4NDU5MS4xNzQyODAzODE4*_ga_M7CEG347TT*czE3NDY5MDczMDckbzE0JGcxJHQxNzQ2OTA3Mzg2JGo2MCRsMCRoMA.." target="_blank">Ver qué hay de nuevo ></a>
+                        </section>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 col-lg-4">
+                    <div class="flip-card card-4 aparecer">
+                        <section class="front">
+                            <h3 class="h3-cartas">Nuevo podcast</h3>
+                        </section>
+                        <section class="back">
+                            <p>Historias tras bastidores desde el interior de MOA ®</p>
+                            <a href="https://mallofamerica.com/podcast?_gl=1*1gq217i*_ga*MTE4NjY4NDU5MS4xNzQyODAzODE4*_ga_M7CEG347TT*czE3NDY5MDczMDckbzE0JGcxJHQxNzQ2OTA3MzQ1JGoyMiRsMCRoMA.." target="_blank">Escucha ahora ></a>
+                        </section>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 col-lg-4">
+                    <div class="flip-card card-5 aparecer">
+                        <section class="front">
+                            <h3 class="h3-cartas">Más diversión en MOA ®</h3>
+                        </section>
+                        <section class="back">
+                            <p>Paquetes de fiestas de cumpleaños personalizables</p>
+                            <a href="https://mallofamerica.com/birthday-parties?_gl=1*2vdjg5*_ga*MTE4NjY4NDU5MS4xNzQyODAzODE4*_ga_M7CEG347TT*czE3NDY5MDczMDckbzE0JGcxJHQxNzQ2OTA3MzA3JGo2MCRsMCRoMA.." target="_blank">Comience a planificar ></a>
+                        </section>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 col-lg-4">
+                    <div class="flip-card card-6 aparecer">
+                        <section class="front">
+                            <h3 class="h3-cartas">MOA ® Insiders</h3>
+                        </section>
+                        <section class="back">
+                            <p>Gana puntos cada vez que compres, juguetes y cenes</p>
+                            <a href="https://www.mallofamerica.com/insiders" target="_blank">Más información ></a>
+                        </section>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
