@@ -1,0 +1,65 @@
+[
+    {
+        "titulo": "Thunderbolts*",
+        "sinopsis": "Un grupo de supervillanos poco convencional es reclutado para hacer misiones para el gobierno: Yelena Belova, Bucky Barnes, Red Guardian, Ghost, Taskmaster y John Walker.",
+        "cartel": "assets/imagenes/thunderbolts.png",
+        "horarios": ["12:00", "14:30", "16:45", "19:00", "21:15", "23:30"],
+        "enlaceCompra": "https://www.imdb.com/es-es/showtimes/cinema/US/ci0014907/US/55112/"
+    },
+    {
+        "titulo": "Los pecadores",
+        "sinopsis": "Tratando de dejar atrás sus problemáticas vidas, dos hermanos gemelos (Jordan) regresan a su pueblo natal para empezar de nuevo, solo para descubrir que un mal aún mayor les espera para darles la bienvenida.",
+        "cartel": "assets/imagenes/losPecadores.png",
+        "horarios": ["12:00", "14:30", "16:45", "19:00", "21:15", "23:30"],
+        "enlaceCompra": "https://www.imdb.com/es-es/showtimes/cinema/US/ci0014907/US/55112/"
+    },
+    {
+        "titulo": "El contable 2",
+        "sinopsis": "Secuela de la película 'El contable' (2016). Christian Wolff tiene talento para resolver problemas complejos. Cuando un viejo conocido es asesinado, dejando tras de sí un críptico mensaje para 'encontrar al contable', Wolff se ve obligado a resolver el caso.",
+        "cartel": "assets/imagenes/elContable2.png",
+        "horarios": ["12:00", "14:30", "16:45", "19:00", "21:15", "23:30"],
+        "enlaceCompra": "https://www.imdb.com/es-es/showtimes/cinema/US/ci0014907/US/55112/"
+    },
+    {
+        "titulo": "Una película de Minecraft",
+        "sinopsis": "Bienvenido al mundo de Minecraft, donde la creatividad no sólo ayuda a crear, sino que es esencial para la supervivencia.",
+        "cartel": "assets/imagenes/minecraft.png",
+        "horarios": ["12:00", "14:30", "16:45", "19:00", "21:15", "23:30"],
+        "enlaceCompra": "https://www.imdb.com/es-es/showtimes/cinema/US/ci0014907/US/55112/"
+    },
+    {
+        "titulo": "Until Dawn",
+        "sinopsis": "Un año después de la misteriosa desaparición de su hermana Melanie, Clover y sus amigas se dirigen al remoto valle donde desapareció en busca de respuestas.",
+        "cartel": "assets/imagenes/untilDown.png",
+        "horarios": ["12:00", "14:30", "16:45", "19:00", "21:15", "23:30"],
+        "enlaceCompra": "https://www.imdb.com/es-es/showtimes/cinema/US/ci0014907/US/55112/"
+    },
+    {
+        "titulo": "Blancanieves",
+        "sinopsis": "Una adaptación en acción real del clásico cuento de hadas sobre una hermosa joven princesa que, mientras es acosada por una reina celosa, busca refugio en la casa de siete enanos en la campiña alemana.",
+        "cartel": "assets/imagenes/blancanieves.png",
+        "horarios": ["12:00", "14:30", "16:45", "19:00", "21:15", "23:30"],
+        "enlaceCompra": "https://www.imdb.com/es-es/showtimes/cinema/US/ci0014907/US/55112/"
+    },
+    {
+        "titulo": "Fight or Flight",
+        "sinopsis": "Lucas, un mercenario retirado en Tailandia, recibe el encargo inesperado de atrapar a un asesino que va a embarcar en un vuelo rumbo a Estados Unidos. Una vez en el aire, descubre la verdadera identidad del criminal.",
+        "cartel": "assets/imagenes/fightOrFlight.png",
+        "horarios": ["12:00", "14:30", "16:45", "19:00", "21:15", "23:30"],
+        "enlaceCompra": "https://www.imdb.com/es-es/showtimes/cinema/US/ci0014907/US/55112/"
+    },
+    {
+        "titulo": "Shadow Force",
+        "sinopsis": "Con una recompensa por sus cabezas, la pareja formada por Omar Sy y Kerry Washington, huye con su hijo para escapar de su antigua organización: una unidad de operaciones en la sombra que ha sido enviada para liquidarlos.",
+        "cartel": "assets/imagenes/shadowForce.png",
+        "horarios": ["12:00", "14:30", "16:45", "19:00", "21:15", "23:30"],
+        "enlaceCompra": "https://www.imdb.com/es-es/showtimes/cinema/US/ci0014907/US/55112/"
+    },
+    {
+        "titulo": "Juliet & Romeo",
+        "sinopsis": "La mayor historia de amor de todos los tiempos, ahora ambientada como un musical pop original y basada en la historia que inspiró 'Romeo y Julieta' de Shakespeare.",
+        "cartel": "assets/imagenes/julietaYRomeo.png",
+        "horarios": ["12:00", "14:30", "16:45", "19:00", "21:15", "23:30"],
+        "enlaceCompra": "https://www.imdb.com/es-es/showtimes/cinema/US/ci0014907/US/55112/"
+    }
+]
