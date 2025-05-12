@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,102 +12,124 @@
     <!-- Favicon -->
     <link rel="icon" href="assets/imagenes/logoCentroComercial.png" type="image/x-icon">
 </head>
+
 <body>
+    <main>
+        <header class="container-fluid text-bg-primary text-white py-4 mb-4">
+            <h1 class="text-center">Aviso Legal</h1>
+        </header>
 
-    <!--Falta etiqueta main englobando todo-->
+        <section>
+            <figure class="container my-5">
 
-    <header class="container-fluid text-bg-primary text-white py-4 mb-4">
-        <h1 class="text-center">Aviso Legal</h1>
-    </header>
+                <figcaption class="accordion" id="avisoLegalAccordion">
 
-    <!--La etiqueta article qué sentido tiene?-->
-
-    <article>
-        <section class="container my-5">
-
-            <!--Este div grande qué sentido tiene?-->
-
-            <div class="accordion" id="avisoLegalAccordion">
-
-                <!-- Cambia las etiquetas div (div no es una etiqueta semántica) por esto que te he puesto
-                <article>
-                    el h2 me parece raro pero esta bien
-                    <section>
-                        <section>
-                            lo de dentro esta bién
+                    <article class="accordion-item">
+                        <h2 class="accordion-header" id="headingEmpresa">
+                            <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#collapseEmpresa" type="button" aria-expanded="false">
+                                Identificación de la empresa
+                            </button>
+                        </h2>
+                        <section id="collapseEmpresa" class="accordion-collapse collapse"
+                            aria-labelledby="headingEmpresa">
+                            <section class="accordion-body">
+                                <p>Mall of America es una entidad registrada bajo la legislación estadounidense con el
+                                    número de identificación fiscal MOA123456. La sede principal de la empresa se
+                                    encuentra
+                                    en Bloomington, Minnesota, Estados Unidos.</p>
+                                <p>Dirección: 60 E. 62nd Street, Bloomington, MN 55431, Estados Unidos.</p>
+                                <p>Teléfono: +1 (800) 123-4567</p>
+                                <a href="contacto.html"
+                                    class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Contacto</a>
+                            </section>
                         </section>
-                    </section>
-                </article>
-                -->
+                    </article>
 
+                    <article class="accordion-item">
+                        <h2 class="accordion-header" id="headingCondiciones">
+                            <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#collapseCondiciones" type="button" aria-expanded="false">
+                                Condiciones de uso
+                            </button>
+                        </h2>
+                        <section id="collapseCondiciones" class="accordion-collapse collapse"
+                            aria-labelledby="headingCondiciones">
+                            <section class="accordion-body">
+                                <p>El acceso y uso del sitio web de Mall of America está condicionado a la aceptación y
+                                    cumplimiento de estas condiciones. Al acceder y utilizar este sitio web, usted
+                                    acepta
+                                    cumplir con todas las disposiciones establecidas en este aviso legal.</p>
+                                <p>El usuario se compromete a utilizar los contenidos y servicios de este sitio web de
+                                    manera legal, respetuosa y conforme a los fines para los que están destinados. Está
+                                    prohibido el uso del sitio para fines ilícitos, fraudulentos o que puedan perjudicar
+                                    a
+                                    la empresa o a otros usuarios.</p>
+                                <p>Nos reservamos el derecho de modificar o actualizar este sitio web, así como sus
+                                    contenidos, en cualquier momento sin previo aviso.</p>
+                            </section>
+                        </section>
+                    </article>
 
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingEmpresa">
-                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseEmpresa" aria-expanded="false">
-                            Identificación de la empresa
-                        </button>
-                    </h2>
-                    <div id="collapseEmpresa" class="accordion-collapse collapse" aria-labelledby="headingEmpresa">
-                        <div class="accordion-body">
-                            <p>Mall of America es una entidad registrada bajo la legislación estadounidense con el número de identificación fiscal MOA123456. La sede principal de la empresa se encuentra en Bloomington, Minnesota, Estados Unidos.</p>
-                            <p>Dirección: 60 E. 62nd Street, Bloomington, MN 55431, Estados Unidos.</p>
-                            <p>Teléfono: +1 (800) 123-4567</p>
-                            <a href="contacto.html" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Contacto</a>
-                        </div>
-                    </div>
-                </div>
+                    <article class="accordion-item">
+                        <h2 class="accordion-header" id="headingDerechos">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseDerechos" aria-expanded="false">
+                                Derechos de autor
+                            </button>
+                        </h2>
+                        <section id="collapseDerechos" class="accordion-collapse collapse"
+                            aria-labelledby="headingDerechos">
+                            <section class="accordion-body">
+                                <p>Todos los derechos de propiedad intelectual sobre el contenido de este sitio web,
+                                    incluidos los textos, imágenes, gráficos, logotipos, iconos, archivos de audio y
+                                    video,
+                                    son propiedad de Mall of America o de sus proveedores, y están protegidos por la
+                                    legislación sobre propiedad intelectual y derechos de autor.</p>
+                                <p>Queda prohibida la reproducción, distribución, modificación, transmisión o cualquier
+                                    otra
+                                    forma de explotación del contenido sin la autorización expresa y por escrito de Mall
+                                    of
+                                    America.</p>
+                                <p>Los logos y marcas comerciales de terceros que puedan aparecer en este sitio web son
+                                    propiedad de sus respectivos titulares.</p>
+                            </section>
+                        </section>
+                    </article>
 
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingCondiciones">
-                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseCondiciones" aria-expanded="false">
-                            Condiciones de uso
-                        </button>
-                    </h2>
-                    <div id="collapseCondiciones" class="accordion-collapse collapse" aria-labelledby="headingCondiciones">
-                        <div class="accordion-body">
-                            <p>El acceso y uso del sitio web de Mall of America está condicionado a la aceptación y cumplimiento de estas condiciones. Al acceder y utilizar este sitio web, usted acepta cumplir con todas las disposiciones establecidas en este aviso legal.</p>
-                            <p>El usuario se compromete a utilizar los contenidos y servicios de este sitio web de manera legal, respetuosa y conforme a los fines para los que están destinados. Está prohibido el uso del sitio para fines ilícitos, fraudulentos o que puedan perjudicar a la empresa o a otros usuarios.</p>
-                            <p>Nos reservamos el derecho de modificar o actualizar este sitio web, así como sus contenidos, en cualquier momento sin previo aviso.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingDerechos">
-                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseDerechos" aria-expanded="false">
-                            Derechos de autor
-                        </button>
-                    </h2>
-                    <div id="collapseDerechos" class="accordion-collapse collapse" aria-labelledby="headingDerechos">
-                        <div class="accordion-body">
-                            <p>Todos los derechos de propiedad intelectual sobre el contenido de este sitio web, incluidos los textos, imágenes, gráficos, logotipos, iconos, archivos de audio y video, son propiedad de Mall of America o de sus proveedores, y están protegidos por la legislación sobre propiedad intelectual y derechos de autor.</p>
-                            <p>Queda prohibida la reproducción, distribución, modificación, transmisión o cualquier otra forma de explotación del contenido sin la autorización expresa y por escrito de Mall of America.</p>
-                            <p>Los logos y marcas comerciales de terceros que puedan aparecer en este sitio web son propiedad de sus respectivos titulares.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingDatos">
-                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseDatos" aria-expanded="false">
-                            Protección de datos
-                        </button>
-                    </h2>
-                    <div id="collapseDatos" class="accordion-collapse collapse" aria-labelledby="headingDatos">
-                        <div class="accordion-body">
-                            <p>En Mall of America, la privacidad de nuestros usuarios es una prioridad. Nos comprometemos a proteger y respetar su privacidad. En este sitio web, recopilamos datos personales solo cuando el usuario los proporciona de manera voluntaria, como al registrarse, suscribirse a boletines o realizar compras.</p>
-                            <p>Los datos personales que recopilamos serán utilizados exclusivamente para los fines establecidos en cada caso (procesar compras, enviar comunicaciones, etc.). En ningún caso serán compartidos con terceros sin el consentimiento expreso del usuario.</p>
-                            <p>El usuario puede ejercer sus derechos de acceso, rectificación, cancelación y oposición sobre sus datos personales en cualquier momento, conforme a la legislación vigente en materia de protección de datos.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    <article class="accordion-item">
+                        <h2 class="accordion-header" id="headingDatos">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseDatos" aria-expanded="false">
+                                Protección de datos
+                            </button>
+                        </h2>
+                        <section id="collapseDatos" class="accordion-collapse collapse" aria-labelledby="headingDatos">
+                            <section class="accordion-body">
+                                <p>En Mall of America, la privacidad de nuestros usuarios es una prioridad. Nos
+                                    comprometemos a proteger y respetar su privacidad. En este sitio web, recopilamos
+                                    datos
+                                    personales solo cuando el usuario los proporciona de manera voluntaria, como al
+                                    registrarse, suscribirse a boletines o realizar compras.</p>
+                                <p>Los datos personales que recopilamos serán utilizados exclusivamente para los fines
+                                    establecidos en cada caso (procesar compras, enviar comunicaciones, etc.). En ningún
+                                    caso serán compartidos con terceros sin el consentimiento expreso del usuario.</p>
+                                <p>El usuario puede ejercer sus derechos de acceso, rectificación, cancelación y
+                                    oposición
+                                    sobre sus datos personales en cualquier momento, conforme a la legislación vigente
+                                    en
+                                    materia de protección de datos.</p>
+                            </section>
+                        </section>
+                    </article>
+                </figcaption>
+            </figure>
         </section>
-    </article>
-
+    </main>
 
     <!-- Bootstrap 5 JS bundle -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
