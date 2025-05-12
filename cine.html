@@ -1,26 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Metadatos -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mall of America - Cine</title>
+    <meta name="description" content="Mall of America - B&B Theatres">
+    <meta name="keywords" content="Mall of America, cine, pelicula, entretenimiento">
+    <meta name="author" content="Jose Alejandro, Alireza Atai, Alberto Magencio">
+    <!-- Título -->
+    <title>B&B Theatres | Mall of America</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/imagenes/logoCentroComercial.png" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Boostrap Icons -->
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-Cines en Mall of America
-Disfruta de las mejores películas en nuestro moderno complejo de cines. El Mall of America cuenta con salas de última generación para vivir el mejor cine en alta calidad de imagen y sonido.
-
-<img src="images/cine_mall_of_america.jpg" alt="Imagen del cine en Mall of America">
-
-Características principales:
-
-Salas IMAX con pantallas gigantes.
-Asientos reclinables premium para mayor comodidad.
-Proyecciones en 3D y 4D para una experiencia inmersiva.
-Snacks y menú gourmet disponibles.
-
-
-Consulta la cartelera actualizada y compra tus entradas online para no perderte los mejores estrenos.
-
-<a href="https://www.mallofamerica.com/entertainment/amc-theatres" target="_blank">Ver cartelera oficial</a>
+    <main class="container-fluid main_container">
+        <section class="mb-5">
+            <h1 class="text-center h1-header-principal">Cine Mall of America</h1>
+            <p class="lead text-center">Vive la magia del cine en uno de los complejos más modernos y completos del país.<br>
+            Disfruta de los últimos estrenos en salas equipadas con sonido envolvente, pantallas gigantes y butacas reclinables.</p>
+            <img class="img-fluid mx-auto d-block mb-4 img-cine" src="assets/imagenes/B&BTheatre.png" alt="Imágenque representa el cine B&B Theatres">
+        </section>
+        <section class="mb-5 row container mx-auto d-flex align-items-center">
+            <h2 class="mb-3 text-center col-12">Cafeteria</h2>
+            <p class="col-12 col-lg-6 lead">Nuestra cafetería te ofrece una gran variedad de snacks, refrescos, palomitas de maíz, nachos, dulces y café. Puedes hacer tu pedido antes de la película o durante la sesión sin salir de la sala gracias a nuestro servicio móvil.</p>
+            <img class="col-12 col-lg-6 img-fluid img-cine" src="assets/imagenes/cafeteria.png" alt="">
+        </section>
+        <section class="mb-5 row container mx-auto d-flex align-items-center">
+            <h2 class="mb-3 text-center col-12">Salas</h2>
+            <img class="col-12 col-lg-6 img-fluid img-cine" src="assets/imagenes/salaCine.png" alt="">
+            <ul class="col-12 col-lg-6 lead text-center lista-desordenada pt-4">
+                <li>10 salas de última generación</li>
+                <li>3 salas IMAX con tecnología láser</li>
+                <li>2 salas VIP con servicio en butaca</li>
+                <li>Asientos reclinables y sonido Dolby Atmos en todas</li>
+            </ul>
+        </section>
+        <section id="cartelera" class="row gy-4 container mx-auto">
+            <h3 class="text-center display-3">Cartelera</h3>
+        </section>
+    </main>
+    <script src="assets/js/peliculas.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
