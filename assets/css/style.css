@@ -1,5 +1,6 @@
 /* Fuente y reset */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rubik+Dirt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Permanent+Marker&family=Rubik+Dirt&display=swap');
 
 * {
   margin: 0;
@@ -11,6 +12,13 @@ body {
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(120deg, #f9f9f9, #eaf3ff);
   color: #333;
+}
+/*   ---Fuentes de google---   */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Permanent Marker';
+}
+p, a {
+  font-family: 'Comic Relief';
 }
 
 /*   ---index.html---   */
