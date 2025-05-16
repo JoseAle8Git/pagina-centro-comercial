@@ -11,5 +11,25 @@ document.getElementById("formContacto").addEventListener("submit", function(even
     const confirmar = confirm("¿Deseas enviar el formulario?");
     if (!confirmar) {
         event.preventDefault();
+        return;
     }
 });
+
+/* document.addEventListener("DOMContentLoaded", function(e) {
+    let formularioContacto = document.getElementById("formContacto");
+    formularioContacto.addEventListener("submit", function(event) {
+        let email = document.getElementById("email").value;
+        let confirmarEmail = document.getElementById("confirmarEmail").value;
+
+        if (email !== confirmarEmail) {
+            alert("Los correos electrónicos no coinciden.");
+            e.preventDefault();
+            return;
+        }
+
+        let confirmar = confirm("¿Deseas enviar el formulario?");
+        if (!confirmar) {
+            e.preventDefault();
+        }
+    })
+}); */
