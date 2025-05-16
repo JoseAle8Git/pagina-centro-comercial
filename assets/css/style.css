@@ -225,6 +225,25 @@ body {
   font-size: 2rem;
   color: #fff;
   text-shadow: 0 0 10px #000;
+  font-weight: bold;
+}
+.flip-card p {
+  width: 90%;
+  color: #fff;
+  font-size: 1.3rem;
+  text-align: center;
+  background-color: #0007;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #000;
+}
+.flip-card a {
+  text-decoration: none;
+  background-color: #61fc;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0 0 15px #000;
 }
 @media screen and (min-width: 480px) {
   .flip-card {
@@ -234,8 +253,26 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
+  .flip-card {
+    width: 60%;
+    min-width: 300px;
+    max-width: 450px;
+  }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1124px) {
+  .flip-card {
+    width: 60%;
+    min-width: 350px;
+    max-width: 550px;
+  }
+}
+/*   ---cine.html---   */
+.img-cine {
+  border-radius: 25px;
+  filter: drop-shadow(0 0 15px #000a);
+}
+.lista-desordenada {
+  list-style: none;
 }
 /* Apartado contacto */
 .ContactoHeader {
