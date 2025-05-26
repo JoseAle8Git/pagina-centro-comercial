@@ -10,6 +10,18 @@
     <meta name="author" content="Jose Alejandro, Alireza Atai, Alberto Magencio">
     <!-- Título -->
     <title>Mall of America - Contacto</title>
+<<<<<<< HEAD
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- FUENTE GOOGLE -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <!-- CSS PERSONALIZADO -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+=======
     <!-- Favicon -->
     <link rel="icon" href="assets/imagenes/logoCentroComercial.png" type="image/x-icon">
     <!-- Bootstrap -->
@@ -18,109 +30,111 @@
     <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+>>>>>>> origin/main
 </head>
 
-<body class="ContactoBody">
+<body class="contactoBody">
 
-    <header class="bg-light py-4 text-center ContactoHeader">
-        <h1 class="ContactoTitulo">Contacto</h1>
-        <p class="ContactoSubtitulo">¿Tienes dudas, sugerencias o necesitas ayuda? ¡Estamos aquí para ti!</p>
-    </header>
+    <main class="main_container container-fluid py-2">
+        <header class="bg-light py-4 text-center contactoHeader">
+            <h1 class="ContactoTitulo">Contacto</h1>
+            <p class="ContactoSubtitulo">¿Tienes dudas, sugerencias o necesitas ayuda? ¡Estamos aquí para ti!</p>
+        </header>
 
-    <main class="container py-5">
         <section class="ContactoFormularioSeccion">
             <h2 class="ContactoFormularioTitulo mb-4 text-center">Formulario de contacto</h2>
-            <form id="formContacto" action="/enviar" method="post" class="row g-3 needs-validation ContactoFormulario"
-                novalidate>
+            <form id="formContacto" action="/enviar" method="post" class="row g-3 needs-validation ContactoFormulario">
 
-                <!-- Cambia los div (div no es etiqueta semántica) por fieldset -->
-
-                <div class="col-md-6">
+                <fieldset class="col-md-6">
                     <label for="nombre" class="form-label ContactoLabel">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" class="form-control ContactoInput" required>
-                </div>
+                </fieldset>
 
-                <div class="col-md-6">
+                <fieldset class="col-md-6">
                     <label for="apellidos" class="form-label ContactoLabel">Apellidos:</label>
                     <input type="text" id="apellidos" name="apellidos" class="form-control ContactoInput" required>
-                </div>
+                </fieldset>
 
-                <div class="col-12">
+                <fieldset class="col-12">
                     <label for="direccion" class="form-label ContactoLabel">Dirección:</label>
                     <input type="text" id="direccion" name="direccion" class="form-control ContactoInput" required>
-                </div>
+                </fieldset>
 
-                <div class="col-md-6">
+                <fieldset class="col-md-6">
                     <label for="email" class="form-label ContactoLabel">Correo electrónico:</label>
                     <input type="email" id="email" name="email" class="form-control ContactoInput" required>
-                </div>
+                </fieldset>
 
-                <div class="col-md-6">
+                <fieldset class="col-md-6">
                     <label for="confirmaEmail" class="form-label ContactoLabel">Confirma correo electrónico:</label>
                     <input type="email" id="confirmaEmail" name="confirmaEmail" class="form-control ContactoInput"
                         required>
-                </div>
+                </fieldset>
 
-                <div class="col-md-6">
+                <fieldset class="col-md-6">
                     <label for="telefono" class="form-label ContactoLabel">Teléfono:</label>
                     <input type="tel" id="telefono" name="telefono" class="form-control ContactoInput" required>
-                </div>
+                </fieldset>
 
-                <div class="col-12">
+                <fieldset class="col-12">
                     <label for="comentarios" class="form-label ContactoLabel">Comentarios:</label>
                     <textarea id="comentarios" name="comentarios" rows="4" class="form-control ContactoTextarea"
                         required></textarea>
-                </div>
+                </fieldset>
 
-                <div class="col-12 text-center">
+                <fieldset class="col-12 text-center">
                     <button type="submit" class="btn btn-primary ContactoBoton">Enviar</button>
-                </div>
+                </fieldset>
+
             </form>
         </section>
     </main>
-    <!-- JS EXTERNO PARA VALIDACIÓN -->
-    <script src="assets/js/validarCorreos.js"></script>
+
+    <footer class=" container-fluid bg-dark text-white mt-5 pt-4 pb-3">
+        <section class="container">
+            <div class="row">
+
+                <!-- Sección de información principal -->
+                <header class="col-md-4 mb-3" aria-labelledby="footer-about">
+                    <h5 id="footer-about">Mall of America</h5>
+                    <p>El mayor centro comercial con tiendas, ocio y restaurantes para toda la familia.</p>
+                </header>
+
+                <!-- Navegación de enlaces -->
+                <nav class="col-md-4 mb-3" aria-labelledby="footer-nav">
+                    <h5 id="footer-nav">Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="contacto.html" class="text-white text-decoration-none">Contacto</a></li>
+                        <li><a href="avisolegal.html" class="text-white text-decoration-none">Aviso Legal</a></li>
+                        <li><a href="visitanos.html" class="text-white text-decoration-none">Cómo llegar</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Artículo de redes sociales -->
+                <article class="col-md-4 mb-3" aria-labelledby="footer-social">
+                    <h5 id="footer-social">Síguenos</h5>
+                    <a href="https://www.facebook.com/MallofAmerica/" class="text-white me-3" aria-label="Facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/mallofamerica/" class="text-white me-3" aria-label="Instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://x.com/mallofamerica" class="text-white me-3" aria-label="Twitter">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+                    <a href="https://www.youtube.com/c/mallofamerica" class="text-white" aria-label="YouTube">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                </article>
+
+            </div>
+
+            <article class="text-center mt-3 border-top pt-3">
+                <small>&copy; 2025 Mall of America. Todos los derechos reservados.</small>
+            </article>
+        </section>
+    </footer>
+
 </body>
-<footer class="bg-dark text-white mt-5 pt-4 pb-3">
-    <div class="container">
-        <div class="row">
-
-            <div class="col-md-4 mb-3">
-                <h5>Mall of America</h5>
-                <p>El mayor centro comercial con tiendas, ocio y restaurantes para toda la familia.</p>
-            </div>
-
-            <div class="col-md-4 mb-3">
-                <h5>Enlaces</h5>
-                <ul class="list-unstyled">
-                    <li><a href="contacto.html" class="text-white text-decoration-none">Contacto</a></li>
-                    <li><a href="avisolegal.html" class="text-white text-decoration-none">Aviso Legal</a></li>
-                    <li><a href="visitanos.html" class="text-white text-decoration-none">Cómo llegar</a></li>
-                </ul>
-            </div>
-
-            <div class="col-md-4 mb-3">
-                <h5>Síguenos</h5>
-                <a href="https://www.facebook.com/MallofAmerica/" class="text-white me-3">
-                    <i class="bi bi-facebook"></i>
-                </a>
-                <a href="https://www.instagram.com/mallofamerica/" class="text-white me-3">
-                    <i class="bi bi-instagram"></i>
-                </a>
-                <a href="https://x.com/mallofamerica" class="text-white me-3">
-                    <i class="bi bi-twitter-x"></i>
-                </a>
-                <a href="https://www.youtube.com/c/mallofamerica" class="text-white">
-                    <i class="bi bi-youtube"></i>
-                </a>
-            </div>
-
-        </div>
-
-        <div class="text-center mt-3 border-top pt-3">
-            <small>&copy; 2025 Mall of America. Todos los derechos reservados.</small>
-        </div>
-    </div>
-</footer>
 
 </html>
