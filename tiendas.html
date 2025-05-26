@@ -26,860 +26,844 @@
 
 
   <!-- Header -->
-  <header class="bg-light py-5">
-    <div class="container text-center">
-      <h1 class="display-5 fw-bold"> Tiendas en Mall of America</h1>
+
+  <main class="flex-grow-1 container my-5">
+    <!-- Header específico de Tiendas -->
+    <header class="text-center mb-5">
+      <h1 class="display-5 fw-bold">Tiendas en Mall of America</h1>
       <p class="lead">
         Explora más de 500 tiendas con las mejores marcas nacionales e internacionales.
       </p>
+    </header>
+
+    <!-- Intro -->
+    <section class="container my-5 text-center tiendasIntro">
+      <p class="mb-4">
+        Desde moda y tecnología hasta deportes y belleza, todo en un solo lugar.
+      </p>
+      <img src="assets/imagenes/tiendas_mall_of_america.png" alt="Tiendas Mall of America" class="img-fluid rounded" />
+    </section>
+
+    <!-- Logos -->
+    <section class="container my-5 tiendasContent" aria-labelledby="tiendasDestacadas">
+      <h2 id="tiendasDestacadas" class="mb-4">Algunas de nuestras tiendas destacadas</h2>
+
+      <ul class="row row-cols-2 row-cols-md-4 g-1 tiendaLogos list-unstyled" role="list">
+        <!-- Apple Store -->
+        <li class="col text-center" role="listitem">
+          <figure>
+            <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
+              data-bs-target="#modalApple" aria-label="Ver detalles de Apple Store">
+              <img src="assets/imagenes/apple-logo.png" alt="Apple Store" class="img-fluid tiendaLogo" />
+            </button>
+          </figure>
+        </li>
+
+        <!-- Nordstrom -->
+        <li class="col text-center" role="listitem">
+          <figure>
+            <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
+              data-bs-target="#modalNordstrom" aria-label="Ver detalles de Nordstrom">
+              <img src="assets/imagenes/nordstrom-logo.png" alt="Nordstrom" class="img-fluid tiendaLogo" />
+            </button>
+          </figure>
+        </li>
+
+        <!-- Levi's -->
+        <li class="col text-center" role="listitem">
+          <figure>
+            <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
+              data-bs-target="#modalLevis" aria-label="Ver detalles de Levi's Store">
+              <img src="assets/imagenes/levis-logo.png" alt="Levi's® Store" class="img-fluid tiendaLogo" />
+            </button>
+          </figure>
+        </li>
+
+        <!-- Sephora -->
+        <li class="col text-center" role="listitem">
+          <figure>
+            <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
+              data-bs-target="#modalSephora" aria-label="Ver detalles de Sephora">
+              <img src="assets/imagenes/Sephora_logo.png" alt="Sephora" class="img-fluid tiendaLogo" />
+            </button>
+          </figure>
+        </li>
+
+        <!-- LEGO -->
+        <li class="col text-center" role="listitem">
+          <figure>
+            <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
+              data-bs-target="#modalLego" aria-label="Ver detalles de LEGO Store">
+              <img src="assets/imagenes/lego-logo.png" alt="LEGO® Store" class="img-fluid tiendaLogo" />
+            </button>
+          </figure>
+        </li>
+
+        <!-- Nike -->
+        <li class="col text-center" role="listitem">
+          <figure>
+            <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
+              data-bs-target="#modalNike" aria-label="Ver detalles de Nike">
+              <img src="assets/imagenes/nike-logo.png" alt="Nike" class="img-fluid tiendaLogo" />
+            </button>
+          </figure>
+        </li>
+
+        <!-- Adidas -->
+        <li class="col text-center" role="listitem">
+          <figure>
+            <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
+              data-bs-target="#modalAdidas" aria-label="Ver detalles de Adidas">
+              <img src="assets/imagenes/adidas-logo.png" alt="Adidas" class="img-fluid tiendaLogo" />
+            </button>
+          </figure>
+        </li>
+
+        <!-- H&M -->
+        <li class="col text-center" role="listitem">
+          <figure>
+            <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
+              data-bs-target="#modalHM" aria-label="Ver detalles de H&M">
+              <img src="assets/imagenes/h&m-logo.png" alt="H&M" class="img-fluid tiendaLogo" />
+            </button>
+          </figure>
+        </li>
+
+        <!-- Zara -->
+        <li class="col text-center" role="listitem">
+          <figure>
+            <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
+              data-bs-target="#modalZara" aria-label="Ver detalles de Zara">
+              <img src="assets/imagenes/zara_Logo.png" alt="Zara" class="img-fluid tiendaLogo" />
+            </button>
+          </figure>
+        </li>
+
+        <!-- Uniqlo -->
+        <li class="col text-center" role="listitem">
+          <figure>
+            <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
+              data-bs-target="#modalUniqlo" aria-label="Ver detalles de Uniqlo">
+              <img src="assets/imagenes/uniqlo_logo.png" alt="Uniqlo" class="img-fluid tiendaLogo" />
+            </button>
+          </figure>
+        </li>
+
+        <!-- Starbucks -->
+        <li class="col text-center" role="listitem">
+          <figure>
+            <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
+              data-bs-target="#modalStarbucks" aria-label="Ver detalles de Starbucks">
+              <img src="assets/imagenes/starbucks-logo.png" alt="Starbucks" class="img-fluid tiendaLogo" />
+            </button>
+          </figure>
+        </li>
+
+        <!-- Foot Locker -->
+        <li class="col text-center" role="listitem">
+          <figure>
+            <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
+              data-bs-target="#modalFootlocker" aria-label="Ver detalles de Foot Locker">
+              <img src="assets/imagenes/footlocker-logo.png" alt="Foot Locker" class="img-fluid tiendaLogo" />
+            </button>
+          </figure>
+        </li>
+
+        <!-- Pandora -->
+        <li class="col text-center" role="listitem">
+          <figure>
+            <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
+              data-bs-target="#modalPandora" aria-label="Ver detalles de Pandora">
+              <img src="assets/imagenes/pandora-logo.png" alt="Pandora" class="img-fluid tiendaLogo" />
+            </button>
+          </figure>
+        </li>
+
+        <!-- Microsoft Store -->
+        <li class="col text-center" role="listitem">
+          <figure>
+            <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
+              data-bs-target="#modalMicrosoft" aria-label="Ver detalles de Microsoft Store">
+              <img src="assets/imagenes/microsoft-logo.png" alt="Microsoft Store" class="img-fluid tiendaLogo" />
+            </button>
+          </figure>
+        </li>
+
+        <!-- Disney Store -->
+        <li class="col text-center" role="listitem">
+          <figure>
+            <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
+              data-bs-target="#modalDisney" aria-label="Ver detalles de Disney Store">
+              <img src="assets/imagenes/disney-logo.png" alt="Disney Store" class="img-fluid tiendaLogo" />
+            </button>
+          </figure>
+        </li>
+
+        <!-- Mango -->
+        <li class="col text-center" role="listitem">
+          <figure>
+            <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
+              data-bs-target="#modalMango" aria-label="Ver detalles de Mango">
+              <img src="assets/imagenes/mango-logo.png" alt="Mango" class="img-fluid tiendaLogo" />
+            </button>
+          </figure>
+        </li>
+
+        <!-- Bershka -->
+        <li class="col text-center" role="listitem">
+          <figure>
+            <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
+              data-bs-target="#modalBershka" aria-label="Ver detalles de Bershka">
+              <img src="assets/imagenes/bershka-logo.png" alt="Bershka" class="img-fluid tiendaLogo" />
+            </button>
+          </figure>
+        </li>
+
+        <!-- Pull & Bear -->
+        <li class="col text-center" role="listitem">
+          <figure>
+            <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
+              data-bs-target="#modalPull" aria-label="Ver detalles de Pull & Bear">
+              <img src="assets/imagenes/pullandbear-logo.png" alt="Pull & Bear" class="img-fluid tiendaLogo" />
+            </button>
+          </figure>
+        </li>
+
+        <!-- Gap -->
+        <li class="col text-center" role="listitem">
+          <figure>
+            <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
+              data-bs-target="#modalGap" aria-label="Ver detalles de Gap">
+              <img src="assets/imagenes/gap-logo.png" alt="Gap" class="img-fluid tiendaLogo" />
+            </button>
+          </figure>
+        </li>
+
+        <!-- Victoria’s Secret -->
+        <li class="col text-center" role="listitem">
+          <figure>
+            <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
+              data-bs-target="#modalVictoria" aria-label="Ver detalles de Victoria’s Secret">
+              <img src="assets/imagenes/victoriassecret-logo.png" alt="Victoria’s Secret"
+                class="img-fluid tiendaLogo" />
+            </button>
+          </figure>
+        </li>
+
+        <!-- Macy's -->
+        <li class="col text-center" role="listitem">
+          <figure>
+            <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
+              data-bs-target="#modalMacys" aria-label="Ver detalles de Macy’s">
+              <img src="assets/imagenes/macys-logo.png" alt="Macy’s" class="img-fluid tiendaLogo" />
+            </button>
+          </figure>
+        </li>
+
+      </ul>
+
+      <p class="mt-4 text-center">
+        <a href="https://www.mallofamerica.com/shopping" target="_blank">
+          Ver todas las tiendas
+        </a>
+      </p>
+    </section>
+
+
+    <!-- Modales -->
+    <!-- Apple Store Modal -->
+    <div class="modal fade" id="modalApple" tabindex="-1" role="dialog" aria-labelledby="modalAppleLabel"
+      aria-modal="true" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <article class="modal-content">
+          <header class="modal-header">
+            <h5 class="modal-title" id="modalAppleLabel">Apple Store</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </header>
+          <section class="modal-body text-center">
+            <figure>
+              <img src="assets/imagenes/apple-logo.png" alt="Apple Store" class="img-fluid mb-3 tiendaModalImage" />
+            </figure>
+            <p class="tiendaModalText">
+              Explora tecnología de vanguardia, dispositivos innovadores y un servicio
+              excepcional en la Apple Store.
+            </p>
+            <div class="modal-actions mt-3">
+              <a href="https://www.apple.com" target="_blank" class="btn btn-primary tiendaModalLink">
+                Visita la web oficial
+              </a>
+            </div>
+          </section>
+        </article>
+      </div>
     </div>
-  </header>
 
-<<<<<<< HEAD
-  <!-- Intro -->
-  <section class="container my-5 text-center tiendasIntro">
-    <p class="mb-4">
-      Desde moda y tecnología hasta deportes y belleza, todo en un solo lugar.
-    </p>
-    <img src="assets/imagenes/tiendas_mall_of_america.png" alt="Tiendas Mall of America" class="img-fluid rounded" />
-  </section>
-=======
-  <main class="flex-fill">
-    <div class="container py-5">
-
-      <!-- Intro -->
-      <section class="container my-5 text-center tiendasIntro">
-        <p class="mb-4">
-          Desde moda y tecnología hasta deportes y belleza, todo en un solo lugar.
-        </p>
-        <img src="assets/imagenes/tiendas_mall_of_america.png" alt="Tiendas Mall of America"
-          class="img-fluid rounded" />
-      </section>
->>>>>>> Aliresa
-
-      <!-- Logos -->
-      <section class="container my-5 tiendasContent" aria-labelledby="tiendasDestacadas">
-        <h2 id="tiendasDestacadas" class="mb-4">Algunas de nuestras tiendas destacadas</h2>
-
-        <ul class="row row-cols-2 row-cols-md-4 g-1 tiendaLogos list-unstyled" role="list">
-          <!-- Apple Store -->
-          <li class="col text-center" role="listitem">
+    <!-- Nordstrom Modal -->
+    <div class="modal fade" id="modalNordstrom" tabindex="-1" role="dialog" aria-labelledby="modalNordstromLabel"
+      aria-modal="true" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <article class="modal-content">
+          <header class="modal-header">
+            <h5 class="modal-title" id="modalNordstromLabel">Nordstrom</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </header>
+          <section class="modal-body text-center">
             <figure>
-              <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
-                data-bs-target="#modalApple" aria-label="Ver detalles de Apple Store">
-                <img src="assets/imagenes/apple-logo.png" alt="Apple Store" class="img-fluid tiendaLogo" />
-              </button>
+              <img src="assets/imagenes/nordstrom-logo.png" alt="Nordstrom" class="img-fluid mb-3 tiendaModalImage" />
             </figure>
-          </li>
+            <p class="tiendaModalText">
+              Descubre moda de lujo, tendencias exclusivas y una amplia variedad en
+              Nordstrom.
+            </p>
+            <div class="modal-actions mt-3">
+              <a href="https://www.nordstrom.com" target="_blank" class="btn btn-primary tiendaModalLink">
+                Visita la web oficial
+              </a>
+            </div>
+          </section>
+        </article>
+      </div>
+    </div>
 
-          <!-- Nordstrom -->
-          <li class="col text-center" role="listitem">
+
+    <!-- Levi's Store Modal -->
+    <div class="modal fade" id="modalLevis" tabindex="-1" role="dialog" aria-labelledby="modalLevisLabel"
+      aria-modal="true" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <article class="modal-content">
+          <header class="modal-header">
+            <h5 class="modal-title" id="modalLevisLabel">Levi's® Store</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </header>
+          <section class="modal-body text-center">
             <figure>
-              <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
-                data-bs-target="#modalNordstrom" aria-label="Ver detalles de Nordstrom">
-                <img src="assets/imagenes/nordstrom-logo.png" alt="Nordstrom" class="img-fluid tiendaLogo" />
-              </button>
+              <img src="assets/imagenes/levis-logo.png" alt="Logo de Levi's® Store"
+                class="img-fluid mb-3 tiendaModalImage" />
             </figure>
-          </li>
+            <p class="tiendaModalText">
+              Conoce la icónica marca de vaqueros y su nueva colección en el
+              Levi's® Store.
+            </p>
+            <div class="modal-actions mt-3">
+              <a href="https://www.levi.com" target="_blank" class="btn btn-primary tiendaModalLink">
+                Visita la web oficial
+              </a>
+            </div>
+          </section>
+        </article>
+      </div>
+    </div>
 
-          <!-- Levi's -->
-          <li class="col text-center" role="listitem">
+    <!-- Sephora Modal -->
+    <div class="modal fade" id="modalSephora" tabindex="-1" role="dialog" aria-labelledby="modalSephoraLabel"
+      aria-modal="true" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <article class="modal-content">
+          <header class="modal-header">
+            <h5 class="modal-title" id="modalSephoraLabel">Sephora</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </header>
+          <section class="modal-body text-center">
             <figure>
-              <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
-                data-bs-target="#modalLevis" aria-label="Ver detalles de Levi's Store">
-                <img src="assets/imagenes/levis-logo.png" alt="Levi's® Store" class="img-fluid tiendaLogo" />
-              </button>
+              <img src="assets/imagenes/Sephora_logo.png" alt="Logo de Sephora"
+                class="img-fluid mb-3 tiendaModalImage" />
             </figure>
-          </li>
+            <p class="tiendaModalText">
+              Descubre lo último en belleza, maquillaje y cuidado personal en Sephora.
+            </p>
+            <div class="modal-actions mt-3">
+              <a href="https://www.sephora.com" target="_blank" class="btn btn-primary tiendaModalLink">
+                Visita la web oficial
+              </a>
+            </div>
+          </section>
+        </article>
+      </div>
+    </div>
 
-          <!-- Sephora -->
-          <li class="col text-center" role="listitem">
+
+    <!-- LEGO Store Modal -->
+    <div class="modal fade" id="modalLego" tabindex="-1" role="dialog" aria-labelledby="modalLegoLabel"
+      aria-modal="true" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <article class="modal-content">
+          <header class="modal-header">
+            <h5 class="modal-title" id="modalLegoLabel">LEGO® Store</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </header>
+          <section class="modal-body text-center">
             <figure>
-              <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
-                data-bs-target="#modalSephora" aria-label="Ver detalles de Sephora">
-                <img src="assets/imagenes/Sephora_logo.png" alt="Sephora" class="img-fluid tiendaLogo" />
-              </button>
+              <img src="assets/imagenes/lego-logo.png" alt="Logo de LEGO® Store"
+                class="img-fluid mb-3 tiendaModalImage" />
             </figure>
-          </li>
+            <p class="tiendaModalText">
+              Disfruta de la creatividad y productos exclusivos en la LEGO® Store.
+            </p>
+            <div class="modal-actions mt-3">
+              <a href="https://store.lego.com" target="_blank" class="btn btn-primary tiendaModalLink">
+                Visita la web oficial
+              </a>
+            </div>
+          </section>
+        </article>
+      </div>
+    </div>
 
-          <!-- LEGO -->
-          <li class="col text-center" role="listitem">
+
+    <!-- Nike Modal -->
+    <div class="modal fade" id="modalNike" tabindex="-1" role="dialog" aria-labelledby="modalNikeLabel"
+      aria-modal="true" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <article class="modal-content">
+          <header class="modal-header">
+            <h5 class="modal-title" id="modalNikeLabel">Nike</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </header>
+          <section class="modal-body text-center">
             <figure>
-              <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
-                data-bs-target="#modalLego" aria-label="Ver detalles de LEGO Store">
-                <img src="assets/imagenes/lego-logo.png" alt="LEGO® Store" class="img-fluid tiendaLogo" />
-              </button>
+              <img src="assets/imagenes/nike-logo.png" alt="Logo de Nike" class="img-fluid mb-3 tiendaModalImage" />
             </figure>
-          </li>
+            <p class="tiendaModalText">
+              Innovación y diseño deportivo en la tienda oficial de Nike.
+            </p>
+            <div class="modal-actions mt-3">
+              <a href="https://www.nike.com" target="_blank" class="btn btn-primary tiendaModalLink">
+                Visita la web oficial
+              </a>
+            </div>
+          </section>
+        </article>
+      </div>
+    </div>
 
-          <!-- Nike -->
-          <li class="col text-center" role="listitem">
+
+    <!-- Adidas Modal -->
+    <div class="modal fade" id="modalAdidas" tabindex="-1" role="dialog" aria-labelledby="modalAdidasLabel"
+      aria-modal="true" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <article class="modal-content">
+          <header class="modal-header">
+            <h5 class="modal-title" id="modalAdidasLabel">Adidas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </header>
+          <section class="modal-body text-center">
             <figure>
-              <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
-                data-bs-target="#modalNike" aria-label="Ver detalles de Nike">
-                <img src="assets/imagenes/nike-logo.png" alt="Nike" class="img-fluid tiendaLogo" />
-              </button>
+              <img src="assets/imagenes/adidas-logo.png" alt="Logo de Adidas" class="img-fluid mb-3 tiendaModalImage" />
             </figure>
-          </li>
+            <p class="tiendaModalText">
+              Ropa y calzado deportivo de alta calidad para todos los estilos de vida y entrenamiento.
+            </p>
+            <div class="modal-actions mt-3">
+              <a href="https://www.adidas.com" target="_blank" class="btn btn-primary tiendaModalLink">
+                Visita la web oficial
+              </a>
+            </div>
+          </section>
+        </article>
+      </div>
+    </div>
 
-          <!-- Adidas -->
-          <li class="col text-center" role="listitem">
+
+    <!-- H&M Modal -->
+    <div class="modal fade" id="modalHM" tabindex="-1" role="dialog" aria-labelledby="modalHMLabel" aria-modal="true"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <article class="modal-content">
+          <header class="modal-header">
+            <h5 class="modal-title" id="modalHMLabel">H&M</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </header>
+          <section class="modal-body text-center">
             <figure>
-              <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
-                data-bs-target="#modalAdidas" aria-label="Ver detalles de Adidas">
-                <img src="assets/imagenes/adidas-logo.png" alt="Adidas" class="img-fluid tiendaLogo" />
-              </button>
+              <img src="assets/imagenes/h&m-logo.png" alt="Logo de H&M" class="img-fluid mb-3 tiendaModalImage" />
             </figure>
-          </li>
+            <p class="tiendaModalText">
+              Moda rápida y asequible para toda la familia, con estilos contemporáneos.
+            </p>
+            <div class="modal-actions mt-3">
+              <a href="https://www2.hm.com" target="_blank" class="btn btn-primary tiendaModalLink">
+                Visita la web oficial
+              </a>
+            </div>
+          </section>
+        </article>
+      </div>
+    </div>
 
-          <!-- H&M -->
-          <li class="col text-center" role="listitem">
+
+    <!-- Zara Modal -->
+    <div class="modal fade" id="modalZara" tabindex="-1" role="dialog" aria-labelledby="modalZaraLabel"
+      aria-modal="true" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <article class="modal-content">
+          <header class="modal-header">
+            <h5 class="modal-title" id="modalZaraLabel">Zara</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </header>
+          <section class="modal-body text-center">
             <figure>
-              <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
-                data-bs-target="#modalHM" aria-label="Ver detalles de H&M">
-                <img src="assets/imagenes/h&m-logo.png" alt="H&M" class="img-fluid tiendaLogo" />
-              </button>
+              <img src="assets/imagenes/zara-logo.png" alt="Logo de Zara" class="img-fluid mb-3 tiendaModalImage" />
             </figure>
-          </li>
+            <p class="tiendaModalText">
+              Moda contemporánea de alta calidad y diseño español para todas las edades.
+            </p>
+            <div class="modal-actions mt-3">
+              <a href="https://www.zara.com" target="_blank" class="btn btn-primary tiendaModalLink">
+                Visita la web oficial
+              </a>
+            </div>
+          </section>
+        </article>
+      </div>
+    </div>
 
-          <!-- Zara -->
-          <li class="col text-center" role="listitem">
+
+    <!-- Uniqlo Modal -->
+    <div class="modal fade" id="modalUniqlo" tabindex="-1" role="dialog" aria-labelledby="modalUniqloLabel"
+      aria-modal="true" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <article class="modal-content">
+          <header class="modal-header">
+            <h5 class="modal-title" id="modalUniqloLabel">Uniqlo</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </header>
+          <section class="modal-body text-center">
             <figure>
-              <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
-                data-bs-target="#modalZara" aria-label="Ver detalles de Zara">
-                <img src="assets/imagenes/zara_Logo.png" alt="Zara" class="img-fluid tiendaLogo" />
-              </button>
+              <img src="assets/imagenes/uniqlo_logo.png" alt="Logo de Uniqlo" class="img-fluid mb-3 tiendaModalImage" />
             </figure>
-          </li>
+            <p class="tiendaModalText">
+              Ropa casual minimalista, cómoda y funcional para el día a día.
+            </p>
+            <div class="modal-actions mt-3">
+              <a href="https://www.uniqlo.com" target="_blank" class="btn btn-primary tiendaModalLink">
+                Visita la web oficial
+              </a>
+            </div>
+          </section>
+        </article>
+      </div>
+    </div>
 
-          <!-- Uniqlo -->
-          <li class="col text-center" role="listitem">
+
+    <!-- Starbucks Modal -->
+    <div class="modal fade" id="modalStarbucks" tabindex="-1" role="dialog" aria-labelledby="modalStarbucksLabel"
+      aria-modal="true" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <article class="modal-content">
+          <header class="modal-header">
+            <h5 class="modal-title" id="modalStarbucksLabel">Starbucks</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </header>
+          <section class="modal-body text-center">
             <figure>
-              <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
-                data-bs-target="#modalUniqlo" aria-label="Ver detalles de Uniqlo">
-                <img src="assets/imagenes/uniqlo_logo.png" alt="Uniqlo" class="img-fluid tiendaLogo" />
-              </button>
+              <img src="assets/imagenes/starbucks-logo.png" alt="Logo de Starbucks"
+                class="img-fluid mb-3 tiendaModalImage" />
             </figure>
-          </li>
+            <p class="tiendaModalText">
+              Café de especialidad, bebidas y repostería en un ambiente acogedor.
+            </p>
+            <div class="modal-actions mt-3">
+              <a href="https://www.starbucks.com" target="_blank" class="btn btn-primary tiendaModalLink">
+                Visita la web oficial
+              </a>
+            </div>
+          </section>
+        </article>
+      </div>
+    </div>
 
-          <!-- Starbucks -->
-          <li class="col text-center" role="listitem">
+
+    <!-- Foot Locker Modal -->
+    <div class="modal fade" id="modalFootlocker" tabindex="-1" role="dialog" aria-labelledby="modalFootlockerLabel"
+      aria-modal="true" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <article class="modal-content">
+          <header class="modal-header">
+            <h5 class="modal-title" id="modalFootlockerLabel">Foot Locker</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </header>
+          <section class="modal-body text-center">
             <figure>
-              <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
-                data-bs-target="#modalStarbucks" aria-label="Ver detalles de Starbucks">
-                <img src="assets/imagenes/starbucks-logo.png" alt="Starbucks" class="img-fluid tiendaLogo" />
-              </button>
+              <img src="assets/imagenes/footlocker-logo.png" alt="Logo de Foot Locker"
+                class="img-fluid mb-3 tiendaModalImage" />
             </figure>
-          </li>
+            <p class="tiendaModalText">
+              Calzado y ropa deportiva de las mejores marcas y ediciones exclusivas.
+            </p>
+            <div class="modal-actions mt-3">
+              <a href="https://www.footlocker.com" target="_blank" class="btn btn-primary tiendaModalLink">
+                Visita la web oficial
+              </a>
+            </div>
+          </section>
+        </article>
+      </div>
+    </div>
 
-          <!-- Foot Locker -->
-          <li class="col text-center" role="listitem">
+
+    <!-- Pandora Modal -->
+    <div class="modal fade" id="modalPandora" tabindex="-1" role="dialog" aria-labelledby="modalPandoraLabel"
+      aria-modal="true" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <article class="modal-content">
+          <header class="modal-header">
+            <h5 class="modal-title" id="modalPandoraLabel">Pandora</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </header>
+          <section class="modal-body text-center">
             <figure>
-              <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
-                data-bs-target="#modalFootlocker" aria-label="Ver detalles de Foot Locker">
-                <img src="assets/imagenes/footlocker-logo.png" alt="Foot Locker" class="img-fluid tiendaLogo" />
-              </button>
+              <img src="assets/imagenes/pandora-logo.png" alt="Logo de Pandora"
+                class="img-fluid mb-3 tiendaModalImage" />
             </figure>
-          </li>
+            <p class="tiendaModalText">
+              Joyería de fantasía con charms personalizables y colecciones exclusivas.
+            </p>
+            <div class="modal-actions mt-3">
+              <a href="https://www.pandora.net" target="_blank" class="btn btn-primary tiendaModalLink">
+                Visita la web oficial
+              </a>
+            </div>
+          </section>
+        </article>
+      </div>
+    </div>
 
-          <!-- Pandora -->
-          <li class="col text-center" role="listitem">
+
+    <!-- Microsoft Store Modal -->
+    <div class="modal fade" id="modalMicrosoft" tabindex="-1" role="dialog" aria-labelledby="modalMicrosoftLabel"
+      aria-modal="true" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <article class="modal-content">
+          <header class="modal-header">
+            <h5 class="modal-title" id="modalMicrosoftLabel">Microsoft Store</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </header>
+          <section class="modal-body text-center">
             <figure>
-              <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
-                data-bs-target="#modalPandora" aria-label="Ver detalles de Pandora">
-                <img src="assets/imagenes/pandora-logo.png" alt="Pandora" class="img-fluid tiendaLogo" />
-              </button>
+              <img src="assets/imagenes/microsoft-logo.png" alt="Logo de Microsoft Store"
+                class="img-fluid mb-3 tiendaModalImage" />
             </figure>
-          </li>
+            <p class="tiendaModalText">
+              Dispositivos, software y accesorios oficiales de Microsoft y sus partners.
+            </p>
+            <div class="modal-actions mt-3">
+              <a href="https://www.microsoft.com/store" target="_blank" class="btn btn-primary tiendaModalLink">
+                Visita la web oficial
+              </a>
+            </div>
+          </section>
+        </article>
+      </div>
+    </div>
 
-          <!-- Microsoft Store -->
-          <li class="col text-center" role="listitem">
+
+    <!-- Disney Store Modal -->
+    <div class="modal fade" id="modalDisney" tabindex="-1" role="dialog" aria-labelledby="modalDisneyLabel"
+      aria-modal="true" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <article class="modal-content">
+          <header class="modal-header">
+            <h5 class="modal-title" id="modalDisneyLabel">Disney Store</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </header>
+          <section class="modal-body text-center">
             <figure>
-              <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
-                data-bs-target="#modalMicrosoft" aria-label="Ver detalles de Microsoft Store">
-                <img src="assets/imagenes/microsoft-logo.png" alt="Microsoft Store" class="img-fluid tiendaLogo" />
-              </button>
+              <img src="assets/imagenes/disney-logo.png" alt="Logo de Disney Store"
+                class="img-fluid mb-3 tiendaModalImage" />
             </figure>
-          </li>
+            <p class="tiendaModalText">
+              Merchandising y productos oficiales de las franquicias Disney, Pixar y Marvel.
+            </p>
+            <div class="modal-actions mt-3">
+              <a href="https://www.shopdisney.com" target="_blank" class="btn btn-primary tiendaModalLink">
+                Visita la web oficial
+              </a>
+            </div>
+          </section>
+        </article>
+      </div>
+    </div>
 
-          <!-- Disney Store -->
-          <li class="col text-center" role="listitem">
+
+    <!-- Mango Modal -->
+    <div class="modal fade" id="modalMango" tabindex="-1" role="dialog" aria-labelledby="modalMangoLabel"
+      aria-modal="true" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <article class="modal-content">
+          <header class="modal-header">
+            <h5 class="modal-title" id="modalMangoLabel">Mango</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </header>
+          <section class="modal-body text-center">
             <figure>
-              <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
-                data-bs-target="#modalDisney" aria-label="Ver detalles de Disney Store">
-                <img src="assets/imagenes/disney-logo.png" alt="Disney Store" class="img-fluid tiendaLogo" />
-              </button>
+              <img src="assets/imagenes/mango-logo.png" alt="Logo de Mango" class="img-fluid mb-3 tiendaModalImage" />
             </figure>
-          </li>
+            <p class="tiendaModalText">
+              Moda femenina y masculina con estilo mediterráneo, actual y sofisticado.
+            </p>
+            <div class="modal-actions mt-3">
+              <a href="https://shop.mango.com" target="_blank" class="btn btn-primary tiendaModalLink">
+                Visita la web oficial
+              </a>
+            </div>
+          </section>
+        </article>
+      </div>
+    </div>
 
-          <!-- Mango -->
-          <li class="col text-center" role="listitem">
+
+    <!-- Bershka Modal -->
+    <div class="modal fade" id="modalBershka" tabindex="-1" role="dialog" aria-labelledby="modalBershkaLabel"
+      aria-modal="true" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <article class="modal-content">
+          <header class="modal-header">
+            <h5 class="modal-title" id="modalBershkaLabel">Bershka</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </header>
+          <section class="modal-body text-center">
             <figure>
-              <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
-                data-bs-target="#modalMango" aria-label="Ver detalles de Mango">
-                <img src="assets/imagenes/mango-logo.png" alt="Mango" class="img-fluid tiendaLogo" />
-              </button>
+              <img src="assets/imagenes/bershka-logo.png" alt="Logo de Bershka"
+                class="img-fluid mb-3 tiendaModalImage" />
             </figure>
-          </li>
+            <p class="tiendaModalText">
+              Tendencias youth y streetwear con un toque urbano y desenfadado.
+            </p>
+            <div class="modal-actions mt-3">
+              <a href="https://www.bershka.com" target="_blank" class="btn btn-primary tiendaModalLink">
+                Visita la web oficial
+              </a>
+            </div>
+          </section>
+        </article>
+      </div>
+    </div>
 
-          <!-- Bershka -->
-          <li class="col text-center" role="listitem">
+
+    <!-- Pull & Bear Modal -->
+    <div class="modal fade" id="modalPull" tabindex="-1" role="dialog" aria-labelledby="modalPullLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <article class="modal-content" role="document">
+          <header class="modal-header">
+            <h5 class="modal-title" id="modalPullLabel">Pull & Bear</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </header>
+
+          <section class="modal-body text-center">
             <figure>
-              <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
-                data-bs-target="#modalBershka" aria-label="Ver detalles de Bershka">
-                <img src="assets/imagenes/bershka-logo.png" alt="Bershka" class="img-fluid tiendaLogo" />
-              </button>
+              <img src="assets/imagenes/pullandbear-logo.png" alt="Logo de Pull & Bear"
+                class="img-fluid mb-3 tiendaModalImage" />
+              <figcaption class="visually-hidden">Logo de Pull & Bear</figcaption>
             </figure>
-          </li>
 
-          <!-- Pull & Bear -->
-          <li class="col text-center" role="listitem">
+            <p class="tiendaModalText">
+              Ropa informal, cómoda y urbana, inspirada en la cultura joven global.
+            </p>
+
+            <nav class="modal-actions mt-3">
+              <a href="https://www.pullandbear.com" target="_blank" class="btn btn-primary tiendaModalLink">
+                Visita la web oficial
+              </a>
+            </nav>
+          </section>
+        </article>
+      </div>
+    </div>
+
+
+    <!-- Gap Modal -->
+    <div class="modal fade" id="modalGap" tabindex="-1" role="dialog" aria-labelledby="modalGapLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <article class="modal-content">
+          <header class="modal-header">
+            <h5 class="modal-title" id="modalGapLabel">Gap</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </header>
+
+          <section class="modal-body text-center">
             <figure>
-              <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
-                data-bs-target="#modalPull" aria-label="Ver detalles de Pull & Bear">
-                <img src="assets/imagenes/pullandbear-logo.png" alt="Pull & Bear" class="img-fluid tiendaLogo" />
-              </button>
+              <img src="assets/imagenes/gap-logo.png" alt="Logo de Gap" class="img-fluid mb-3 tiendaModalImage" />
+              <figcaption class="visually-hidden">Logo de Gap</figcaption>
             </figure>
-          </li>
 
-          <!-- Gap -->
-          <li class="col text-center" role="listitem">
+            <p class="tiendaModalText">
+              Moda americana clásica y casual, con básicos de alta calidad.
+            </p>
+
+            <nav class="modal-actions mt-3">
+              <a href="https://www.gap.com" target="_blank" class="btn btn-primary tiendaModalLink">
+                Visita la web oficial
+              </a>
+            </nav>
+          </section>
+        </article>
+      </div>
+    </div>
+
+
+    <!-- Victoria’s Secret Modal -->
+    <div class="modal fade" id="modalVictoria" tabindex="-1" role="dialog" aria-labelledby="modalVictoriaLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <article class="modal-content">
+          <header class="modal-header">
+            <h5 class="modal-title" id="modalVictoriaLabel">Victoria’s Secret</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </header>
+
+          <section class="modal-body text-center">
             <figure>
-              <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
-                data-bs-target="#modalGap" aria-label="Ver detalles de Gap">
-                <img src="assets/imagenes/gap-logo.png" alt="Gap" class="img-fluid tiendaLogo" />
-              </button>
+              <img src="assets/imagenes/victoriassecret-logo.png" alt="Logo de Victoria’s Secret"
+                class="img-fluid mb-3 tiendaModalImage" />
+              <figcaption class="visually-hidden">Logo de Victoria’s Secret</figcaption>
             </figure>
-          </li>
 
-          <!-- Victoria’s Secret -->
-          <li class="col text-center" role="listitem">
+            <p class="tiendaModalText">
+              Lencería, ropa de casa y perfumes de una de las marcas más icónicas del sector.
+            </p>
+
+            <nav class="modal-actions mt-3">
+              <a href="https://www.victoriassecret.com" target="_blank" class="btn btn-primary tiendaModalLink">
+                Visita la web oficial
+              </a>
+            </nav>
+          </section>
+        </article>
+      </div>
+    </div>
+
+
+    <!-- Macy’s Modal -->
+    <div class="modal fade" id="modalMacys" tabindex="-1" role="dialog" aria-labelledby="modalMacysLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <article class="modal-content">
+          <header class="modal-header">
+            <h5 class="modal-title" id="modalMacysLabel">Macy’s</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </header>
+
+          <section class="modal-body text-center">
             <figure>
-              <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
-                data-bs-target="#modalVictoria" aria-label="Ver detalles de Victoria’s Secret">
-                <img src="assets/imagenes/victoriassecret-logo.png" alt="Victoria’s Secret"
-                  class="img-fluid tiendaLogo" />
-              </button>
+              <img src="assets/imagenes/macys-logo.png" alt="Logo de Macy’s" class="img-fluid mb-3 tiendaModalImage" />
+              <figcaption class="visually-hidden">Logo de Macy’s</figcaption>
             </figure>
-          </li>
 
-          <!-- Macy's -->
-          <li class="col text-center" role="listitem">
-            <figure>
-              <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-toggle="modal"
-                data-bs-target="#modalMacys" aria-label="Ver detalles de Macy’s">
-                <img src="assets/imagenes/macys-logo.png" alt="Macy’s" class="img-fluid tiendaLogo" />
-              </button>
-            </figure>
-          </li>
+            <p class="tiendaModalText">
+              Descubre moda, belleza, hogar y mucho más en la icónica tienda por departamentos Macy’s.
+            </p>
 
-        </ul>
-
-        <p class="mt-4 text-center">
-          <a href="https://www.mallofamerica.com/shopping" target="_blank">
-            Ver todas las tiendas
-          </a>
-        </p>
-      </section>
-
-
-      <!-- Modales -->
-      <!-- Apple Store Modal -->
-      <div class="modal fade" id="modalApple" tabindex="-1" role="dialog" aria-labelledby="modalAppleLabel"
-        aria-modal="true" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <article class="modal-content">
-            <header class="modal-header">
-              <h5 class="modal-title" id="modalAppleLabel">Apple Store</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-            </header>
-            <section class="modal-body text-center">
-              <figure>
-                <img src="assets/imagenes/apple-logo.png" alt="Apple Store" class="img-fluid mb-3 tiendaModalImage" />
-              </figure>
-              <p class="tiendaModalText">
-                Explora tecnología de vanguardia, dispositivos innovadores y un servicio
-                excepcional en la Apple Store.
-              </p>
-              <div class="modal-actions mt-3">
-                <a href="https://www.apple.com" target="_blank" class="btn btn-primary tiendaModalLink">
-                  Visita la web oficial
-                </a>
-              </div>
-            </section>
-          </article>
-        </div>
+            <nav class="modal-actions mt-3">
+              <a href="https://www.macys.com" target="_blank" class="btn btn-primary tiendaModalLink">
+                Visita la web oficial
+              </a>
+            </nav>
+          </section>
+        </article>
       </div>
-
-      <!-- Nordstrom Modal -->
-      <div class="modal fade" id="modalNordstrom" tabindex="-1" role="dialog" aria-labelledby="modalNordstromLabel"
-        aria-modal="true" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <article class="modal-content">
-            <header class="modal-header">
-              <h5 class="modal-title" id="modalNordstromLabel">Nordstrom</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-            </header>
-            <section class="modal-body text-center">
-              <figure>
-                <img src="assets/imagenes/nordstrom-logo.png" alt="Nordstrom" class="img-fluid mb-3 tiendaModalImage" />
-              </figure>
-              <p class="tiendaModalText">
-                Descubre moda de lujo, tendencias exclusivas y una amplia variedad en
-                Nordstrom.
-              </p>
-              <div class="modal-actions mt-3">
-                <a href="https://www.nordstrom.com" target="_blank" class="btn btn-primary tiendaModalLink">
-                  Visita la web oficial
-                </a>
-              </div>
-            </section>
-          </article>
-        </div>
-      </div>
-
-
-      <!-- Levi's Store Modal -->
-      <div class="modal fade" id="modalLevis" tabindex="-1" role="dialog" aria-labelledby="modalLevisLabel"
-        aria-modal="true" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <article class="modal-content">
-            <header class="modal-header">
-              <h5 class="modal-title" id="modalLevisLabel">Levi's® Store</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-            </header>
-            <section class="modal-body text-center">
-              <figure>
-                <img src="assets/imagenes/levis-logo.png" alt="Logo de Levi's® Store"
-                  class="img-fluid mb-3 tiendaModalImage" />
-              </figure>
-              <p class="tiendaModalText">
-                Conoce la icónica marca de vaqueros y su nueva colección en el
-                Levi's® Store.
-              </p>
-              <div class="modal-actions mt-3">
-                <a href="https://www.levi.com" target="_blank" class="btn btn-primary tiendaModalLink">
-                  Visita la web oficial
-                </a>
-              </div>
-            </section>
-          </article>
-        </div>
-      </div>
-
-      <!-- Sephora Modal -->
-      <div class="modal fade" id="modalSephora" tabindex="-1" role="dialog" aria-labelledby="modalSephoraLabel"
-        aria-modal="true" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <article class="modal-content">
-            <header class="modal-header">
-              <h5 class="modal-title" id="modalSephoraLabel">Sephora</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-            </header>
-            <section class="modal-body text-center">
-              <figure>
-                <img src="assets/imagenes/Sephora_logo.png" alt="Logo de Sephora"
-                  class="img-fluid mb-3 tiendaModalImage" />
-              </figure>
-              <p class="tiendaModalText">
-                Descubre lo último en belleza, maquillaje y cuidado personal en Sephora.
-              </p>
-              <div class="modal-actions mt-3">
-                <a href="https://www.sephora.com" target="_blank" class="btn btn-primary tiendaModalLink">
-                  Visita la web oficial
-                </a>
-              </div>
-            </section>
-          </article>
-        </div>
-      </div>
-
-
-      <!-- LEGO Store Modal -->
-      <div class="modal fade" id="modalLego" tabindex="-1" role="dialog" aria-labelledby="modalLegoLabel"
-        aria-modal="true" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <article class="modal-content">
-            <header class="modal-header">
-              <h5 class="modal-title" id="modalLegoLabel">LEGO® Store</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-            </header>
-            <section class="modal-body text-center">
-              <figure>
-                <img src="assets/imagenes/lego-logo.png" alt="Logo de LEGO® Store"
-                  class="img-fluid mb-3 tiendaModalImage" />
-              </figure>
-              <p class="tiendaModalText">
-                Disfruta de la creatividad y productos exclusivos en la LEGO® Store.
-              </p>
-              <div class="modal-actions mt-3">
-                <a href="https://store.lego.com" target="_blank" class="btn btn-primary tiendaModalLink">
-                  Visita la web oficial
-                </a>
-              </div>
-            </section>
-          </article>
-        </div>
-      </div>
-
-
-      <!-- Nike Modal -->
-      <div class="modal fade" id="modalNike" tabindex="-1" role="dialog" aria-labelledby="modalNikeLabel"
-        aria-modal="true" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <article class="modal-content">
-            <header class="modal-header">
-              <h5 class="modal-title" id="modalNikeLabel">Nike</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-            </header>
-            <section class="modal-body text-center">
-              <figure>
-                <img src="assets/imagenes/nike-logo.png" alt="Logo de Nike" class="img-fluid mb-3 tiendaModalImage" />
-              </figure>
-              <p class="tiendaModalText">
-                Innovación y diseño deportivo en la tienda oficial de Nike.
-              </p>
-              <div class="modal-actions mt-3">
-                <a href="https://www.nike.com" target="_blank" class="btn btn-primary tiendaModalLink">
-                  Visita la web oficial
-                </a>
-              </div>
-            </section>
-          </article>
-        </div>
-      </div>
-
-
-      <!-- Adidas Modal -->
-      <div class="modal fade" id="modalAdidas" tabindex="-1" role="dialog" aria-labelledby="modalAdidasLabel"
-        aria-modal="true" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <article class="modal-content">
-            <header class="modal-header">
-              <h5 class="modal-title" id="modalAdidasLabel">Adidas</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-            </header>
-            <section class="modal-body text-center">
-              <figure>
-                <img src="assets/imagenes/adidas-logo.png" alt="Logo de Adidas"
-                  class="img-fluid mb-3 tiendaModalImage" />
-              </figure>
-              <p class="tiendaModalText">
-                Ropa y calzado deportivo de alta calidad para todos los estilos de vida y entrenamiento.
-              </p>
-              <div class="modal-actions mt-3">
-                <a href="https://www.adidas.com" target="_blank" class="btn btn-primary tiendaModalLink">
-                  Visita la web oficial
-                </a>
-              </div>
-            </section>
-          </article>
-        </div>
-      </div>
-
-
-      <!-- H&M Modal -->
-      <div class="modal fade" id="modalHM" tabindex="-1" role="dialog" aria-labelledby="modalHMLabel" aria-modal="true"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <article class="modal-content">
-            <header class="modal-header">
-              <h5 class="modal-title" id="modalHMLabel">H&M</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-            </header>
-            <section class="modal-body text-center">
-              <figure>
-                <img src="assets/imagenes/h&m-logo.png" alt="Logo de H&M" class="img-fluid mb-3 tiendaModalImage" />
-              </figure>
-              <p class="tiendaModalText">
-                Moda rápida y asequible para toda la familia, con estilos contemporáneos.
-              </p>
-              <div class="modal-actions mt-3">
-                <a href="https://www2.hm.com" target="_blank" class="btn btn-primary tiendaModalLink">
-                  Visita la web oficial
-                </a>
-              </div>
-            </section>
-          </article>
-        </div>
-      </div>
-
-
-      <!-- Zara Modal -->
-      <div class="modal fade" id="modalZara" tabindex="-1" role="dialog" aria-labelledby="modalZaraLabel"
-        aria-modal="true" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <article class="modal-content">
-            <header class="modal-header">
-              <h5 class="modal-title" id="modalZaraLabel">Zara</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-            </header>
-            <section class="modal-body text-center">
-              <figure>
-                <img src="assets/imagenes/zara-logo.png" alt="Logo de Zara" class="img-fluid mb-3 tiendaModalImage" />
-              </figure>
-              <p class="tiendaModalText">
-                Moda contemporánea de alta calidad y diseño español para todas las edades.
-              </p>
-              <div class="modal-actions mt-3">
-                <a href="https://www.zara.com" target="_blank" class="btn btn-primary tiendaModalLink">
-                  Visita la web oficial
-                </a>
-              </div>
-            </section>
-          </article>
-        </div>
-      </div>
-
-
-      <!-- Uniqlo Modal -->
-      <div class="modal fade" id="modalUniqlo" tabindex="-1" role="dialog" aria-labelledby="modalUniqloLabel"
-        aria-modal="true" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <article class="modal-content">
-            <header class="modal-header">
-              <h5 class="modal-title" id="modalUniqloLabel">Uniqlo</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-            </header>
-            <section class="modal-body text-center">
-              <figure>
-                <img src="assets/imagenes/uniqlo_logo.png" alt="Logo de Uniqlo"
-                  class="img-fluid mb-3 tiendaModalImage" />
-              </figure>
-              <p class="tiendaModalText">
-                Ropa casual minimalista, cómoda y funcional para el día a día.
-              </p>
-              <div class="modal-actions mt-3">
-                <a href="https://www.uniqlo.com" target="_blank" class="btn btn-primary tiendaModalLink">
-                  Visita la web oficial
-                </a>
-              </div>
-            </section>
-          </article>
-        </div>
-      </div>
-
-
-      <!-- Starbucks Modal -->
-      <div class="modal fade" id="modalStarbucks" tabindex="-1" role="dialog" aria-labelledby="modalStarbucksLabel"
-        aria-modal="true" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <article class="modal-content">
-            <header class="modal-header">
-              <h5 class="modal-title" id="modalStarbucksLabel">Starbucks</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-            </header>
-            <section class="modal-body text-center">
-              <figure>
-                <img src="assets/imagenes/starbucks-logo.png" alt="Logo de Starbucks"
-                  class="img-fluid mb-3 tiendaModalImage" />
-              </figure>
-              <p class="tiendaModalText">
-                Café de especialidad, bebidas y repostería en un ambiente acogedor.
-              </p>
-              <div class="modal-actions mt-3">
-                <a href="https://www.starbucks.com" target="_blank" class="btn btn-primary tiendaModalLink">
-                  Visita la web oficial
-                </a>
-              </div>
-            </section>
-          </article>
-        </div>
-      </div>
-
-
-      <!-- Foot Locker Modal -->
-      <div class="modal fade" id="modalFootlocker" tabindex="-1" role="dialog" aria-labelledby="modalFootlockerLabel"
-        aria-modal="true" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <article class="modal-content">
-            <header class="modal-header">
-              <h5 class="modal-title" id="modalFootlockerLabel">Foot Locker</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-            </header>
-            <section class="modal-body text-center">
-              <figure>
-                <img src="assets/imagenes/footlocker-logo.png" alt="Logo de Foot Locker"
-                  class="img-fluid mb-3 tiendaModalImage" />
-              </figure>
-              <p class="tiendaModalText">
-                Calzado y ropa deportiva de las mejores marcas y ediciones exclusivas.
-              </p>
-              <div class="modal-actions mt-3">
-                <a href="https://www.footlocker.com" target="_blank" class="btn btn-primary tiendaModalLink">
-                  Visita la web oficial
-                </a>
-              </div>
-            </section>
-          </article>
-        </div>
-      </div>
-
-
-      <!-- Pandora Modal -->
-      <div class="modal fade" id="modalPandora" tabindex="-1" role="dialog" aria-labelledby="modalPandoraLabel"
-        aria-modal="true" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <article class="modal-content">
-            <header class="modal-header">
-              <h5 class="modal-title" id="modalPandoraLabel">Pandora</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-            </header>
-            <section class="modal-body text-center">
-              <figure>
-                <img src="assets/imagenes/pandora-logo.png" alt="Logo de Pandora"
-                  class="img-fluid mb-3 tiendaModalImage" />
-              </figure>
-              <p class="tiendaModalText">
-                Joyería de fantasía con charms personalizables y colecciones exclusivas.
-              </p>
-              <div class="modal-actions mt-3">
-                <a href="https://www.pandora.net" target="_blank" class="btn btn-primary tiendaModalLink">
-                  Visita la web oficial
-                </a>
-              </div>
-            </section>
-          </article>
-        </div>
-      </div>
-
-
-      <!-- Microsoft Store Modal -->
-      <div class="modal fade" id="modalMicrosoft" tabindex="-1" role="dialog" aria-labelledby="modalMicrosoftLabel"
-        aria-modal="true" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <article class="modal-content">
-            <header class="modal-header">
-              <h5 class="modal-title" id="modalMicrosoftLabel">Microsoft Store</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-            </header>
-            <section class="modal-body text-center">
-              <figure>
-                <img src="assets/imagenes/microsoft-logo.png" alt="Logo de Microsoft Store"
-                  class="img-fluid mb-3 tiendaModalImage" />
-              </figure>
-              <p class="tiendaModalText">
-                Dispositivos, software y accesorios oficiales de Microsoft y sus partners.
-              </p>
-              <div class="modal-actions mt-3">
-                <a href="https://www.microsoft.com/store" target="_blank" class="btn btn-primary tiendaModalLink">
-                  Visita la web oficial
-                </a>
-              </div>
-            </section>
-          </article>
-        </div>
-      </div>
-
-
-      <!-- Disney Store Modal -->
-      <div class="modal fade" id="modalDisney" tabindex="-1" role="dialog" aria-labelledby="modalDisneyLabel"
-        aria-modal="true" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <article class="modal-content">
-            <header class="modal-header">
-              <h5 class="modal-title" id="modalDisneyLabel">Disney Store</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-            </header>
-            <section class="modal-body text-center">
-              <figure>
-                <img src="assets/imagenes/disney-logo.png" alt="Logo de Disney Store"
-                  class="img-fluid mb-3 tiendaModalImage" />
-              </figure>
-              <p class="tiendaModalText">
-                Merchandising y productos oficiales de las franquicias Disney, Pixar y Marvel.
-              </p>
-              <div class="modal-actions mt-3">
-                <a href="https://www.shopdisney.com" target="_blank" class="btn btn-primary tiendaModalLink">
-                  Visita la web oficial
-                </a>
-              </div>
-            </section>
-          </article>
-        </div>
-      </div>
-
-
-      <!-- Mango Modal -->
-      <div class="modal fade" id="modalMango" tabindex="-1" role="dialog" aria-labelledby="modalMangoLabel"
-        aria-modal="true" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <article class="modal-content">
-            <header class="modal-header">
-              <h5 class="modal-title" id="modalMangoLabel">Mango</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-            </header>
-            <section class="modal-body text-center">
-              <figure>
-                <img src="assets/imagenes/mango-logo.png" alt="Logo de Mango" class="img-fluid mb-3 tiendaModalImage" />
-              </figure>
-              <p class="tiendaModalText">
-                Moda femenina y masculina con estilo mediterráneo, actual y sofisticado.
-              </p>
-              <div class="modal-actions mt-3">
-                <a href="https://shop.mango.com" target="_blank" class="btn btn-primary tiendaModalLink">
-                  Visita la web oficial
-                </a>
-              </div>
-            </section>
-          </article>
-        </div>
-      </div>
-
-
-      <!-- Bershka Modal -->
-      <div class="modal fade" id="modalBershka" tabindex="-1" role="dialog" aria-labelledby="modalBershkaLabel"
-        aria-modal="true" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <article class="modal-content">
-            <header class="modal-header">
-              <h5 class="modal-title" id="modalBershkaLabel">Bershka</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-            </header>
-            <section class="modal-body text-center">
-              <figure>
-                <img src="assets/imagenes/bershka-logo.png" alt="Logo de Bershka"
-                  class="img-fluid mb-3 tiendaModalImage" />
-              </figure>
-              <p class="tiendaModalText">
-                Tendencias youth y streetwear con un toque urbano y desenfadado.
-              </p>
-              <div class="modal-actions mt-3">
-                <a href="https://www.bershka.com" target="_blank" class="btn btn-primary tiendaModalLink">
-                  Visita la web oficial
-                </a>
-              </div>
-            </section>
-          </article>
-        </div>
-      </div>
-
-
-      <!-- Pull & Bear Modal -->
-      <div class="modal fade" id="modalPull" tabindex="-1" role="dialog" aria-labelledby="modalPullLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <article class="modal-content" role="document">
-            <header class="modal-header">
-              <h5 class="modal-title" id="modalPullLabel">Pull & Bear</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-            </header>
-
-            <section class="modal-body text-center">
-              <figure>
-                <img src="assets/imagenes/pullandbear-logo.png" alt="Logo de Pull & Bear"
-                  class="img-fluid mb-3 tiendaModalImage" />
-                <figcaption class="visually-hidden">Logo de Pull & Bear</figcaption>
-              </figure>
-
-              <p class="tiendaModalText">
-                Ropa informal, cómoda y urbana, inspirada en la cultura joven global.
-              </p>
-
-              <nav class="modal-actions mt-3">
-                <a href="https://www.pullandbear.com" target="_blank" class="btn btn-primary tiendaModalLink">
-                  Visita la web oficial
-                </a>
-              </nav>
-            </section>
-          </article>
-        </div>
-      </div>
-
-
-      <!-- Gap Modal -->
-      <div class="modal fade" id="modalGap" tabindex="-1" role="dialog" aria-labelledby="modalGapLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <article class="modal-content">
-            <header class="modal-header">
-              <h5 class="modal-title" id="modalGapLabel">Gap</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-            </header>
-
-            <section class="modal-body text-center">
-              <figure>
-                <img src="assets/imagenes/gap-logo.png" alt="Logo de Gap" class="img-fluid mb-3 tiendaModalImage" />
-                <figcaption class="visually-hidden">Logo de Gap</figcaption>
-              </figure>
-
-              <p class="tiendaModalText">
-                Moda americana clásica y casual, con básicos de alta calidad.
-              </p>
-
-              <nav class="modal-actions mt-3">
-                <a href="https://www.gap.com" target="_blank" class="btn btn-primary tiendaModalLink">
-                  Visita la web oficial
-                </a>
-              </nav>
-            </section>
-          </article>
-        </div>
-      </div>
-
-
-      <!-- Victoria’s Secret Modal -->
-      <div class="modal fade" id="modalVictoria" tabindex="-1" role="dialog" aria-labelledby="modalVictoriaLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <article class="modal-content">
-            <header class="modal-header">
-              <h5 class="modal-title" id="modalVictoriaLabel">Victoria’s Secret</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-            </header>
-
-            <section class="modal-body text-center">
-              <figure>
-                <img src="assets/imagenes/victoriassecret-logo.png" alt="Logo de Victoria’s Secret"
-                  class="img-fluid mb-3 tiendaModalImage" />
-                <figcaption class="visually-hidden">Logo de Victoria’s Secret</figcaption>
-              </figure>
-
-              <p class="tiendaModalText">
-                Lencería, ropa de casa y perfumes de una de las marcas más icónicas del sector.
-              </p>
-
-              <nav class="modal-actions mt-3">
-                <a href="https://www.victoriassecret.com" target="_blank" class="btn btn-primary tiendaModalLink">
-                  Visita la web oficial
-                </a>
-              </nav>
-            </section>
-          </article>
-        </div>
-      </div>
-
-
-      <!-- Macy’s Modal -->
-      <div class="modal fade" id="modalMacys" tabindex="-1" role="dialog" aria-labelledby="modalMacysLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <article class="modal-content">
-            <header class="modal-header">
-              <h5 class="modal-title" id="modalMacysLabel">Macy’s</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-            </header>
-
-            <section class="modal-body text-center">
-              <figure>
-                <img src="assets/imagenes/macys-logo.png" alt="Logo de Macy’s"
-                  class="img-fluid mb-3 tiendaModalImage" />
-                <figcaption class="visually-hidden">Logo de Macy’s</figcaption>
-              </figure>
-
-              <p class="tiendaModalText">
-                Descubre moda, belleza, hogar y mucho más en la icónica tienda por departamentos Macy’s.
-              </p>
-
-              <nav class="modal-actions mt-3">
-                <a href="https://www.macys.com" target="_blank" class="btn btn-primary tiendaModalLink">
-                  Visita la web oficial
-                </a>
-              </nav>
-            </section>
-          </article>
-        </div>
-      </div>
+    </div>
     </div>
   </main>
   <footer class=" container-fluid bg-dark text-white mt-5 pt-4 pb-3">
