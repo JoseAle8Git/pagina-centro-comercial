@@ -13,11 +13,19 @@ body {
   background: linear-gradient(120deg, #f9f9f9, #eaf3ff);
   color: #333;
 }
+
 /*   ---Fuentes de google---   */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Permanent Marker';
 }
-p, a {
+
+p,
+a {
   font-family: 'Comic Relief';
 }
 
@@ -579,20 +587,100 @@ p, a {
 
 /*RESTAURANTES*/
 .modal-fondo .modal-content {
-  position: relative;
-  background-size: cover;
-  background-position: center;
+  color: #fff !important;
   background-repeat: no-repeat;
-  color: white;
-  text-align: center !important;
+  background-size: cover;
+  background-position: center center;
 }
 
-.fondo-contenido-restaurantes {
-  background-color: #000a;
+.modal-fondo .modal-header,
+.modal-fondo .modal-body {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.modal-header {
-  border-bottom: none !important;
+
+.restaurantesHeader {
+  background: linear-gradient(135deg, #0d6efd, #6610f2);
+  color: #fff;
+  padding: 2.5rem 1rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.restaurantesHeader h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ===== RESTAURANTES: Introducción ===== */
+.restaurantesIntro {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.restaurantesIntro p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+.restaurantesIntro img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.restaurantesIntro img:hover {
+  transform: scale(1.02);
+}
+
+/* ===== RESTAURANTES: Contenido de logos ===== */
+.restaurantesContent h2 {
+  font-size: 1.75rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.restauranteLogos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.restauranteLogo {
+  width: 120px;
+  height: 80px;
+  object-fit: contain;
+  background: transparent;
+  padding: 4px;
+  border-radius: 6px;
+  transition: transform 0.3s;
+  margin-bottom: 0;
+}
+
+.restauranteLogo:hover {
+  transform: translateY(-4px) scale(1.2);
+}
+
+/* ===== RESTAURANTES: Enlace ver todos ===== */
+.restaurantesContent a {
+  color: #0d6efd;
+  font-weight: 500;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+.restaurantesContent a:hover {
+  color: #6610f2;
+  text-decoration: underline;
 }
 
 
