@@ -745,6 +745,21 @@ a {
   background-image: url("../imagenes/dunkin.jpg");
 }
 
+/* logos ocio */
+.ocioLogo {
+  width: 180px;
+  height: 120px;
+  object-fit: contain;
+  background: transparent;
+  border-radius: 6px;
+
+  transition: transform 0.3s;
+  margin-bottom: 0;
+}
+
+.ocioLogo:hover {
+  transform: translateY(-4px) scale(1.2);
+}
 
 
 
