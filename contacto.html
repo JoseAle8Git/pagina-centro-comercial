@@ -24,6 +24,42 @@
 
 <body class="contactoBody">
 
+    <header class="header-container_nav">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navegador">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img class="img-logo_nav" src="assets/imagenes/logoMallOfAmerica.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse div-ul" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ul-navbar">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="cine.html">Cine</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="restaurantes.html">Resturantes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tiendas.html">Tiendas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ocio.html">Ocio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobreNosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  link-activo" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="avisoLegal.html">Aviso Legal</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
     <main class="main_container container-fluid py-2">
         <header class="bg-light py-4 text-center contactoHeader">
             <h1 class="ContactoTitulo">Contacto</h1>
@@ -79,49 +115,44 @@
         </section>
     </main>
 
-    <footer class=" container-fluid bg-dark text-white mt-5 pt-4 pb-3">
-        <section class="container">
-            <div class="row">
-
-                <!-- Sección de información principal -->
-                <header class="col-md-4 mb-3" aria-labelledby="footer-about">
-                    <h5 id="footer-about">Mall of America</h5>
-                    <p>El mayor centro comercial con tiendas, ocio y restaurantes para toda la familia.</p>
-                </header>
-
-                <!-- Navegación de enlaces -->
-                <nav class="col-md-4 mb-3" aria-labelledby="footer-nav">
-                    <h5 id="footer-nav">Enlaces</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="contacto.html" class="text-white text-decoration-none">Contacto</a></li>
-                        <li><a href="avisolegal.html" class="text-white text-decoration-none">Aviso Legal</a></li>
-                        <li><a href="visitanos.html" class="text-white text-decoration-none">Cómo llegar</a></li>
-                    </ul>
-                </nav>
-
-                <!-- Artículo de redes sociales -->
-                <article class="col-md-4 mb-3" aria-labelledby="footer-social">
-                    <h5 id="footer-social">Síguenos</h5>
-                    <a href="https://www.facebook.com/MallofAmerica/" class="text-white me-3" aria-label="Facebook">
-                        <i class="bi bi-facebook"></i>
-                    </a>
-                    <a href="https://www.instagram.com/mallofamerica/" class="text-white me-3" aria-label="Instagram">
-                        <i class="bi bi-instagram"></i>
-                    </a>
-                    <a href="https://x.com/mallofamerica" class="text-white me-3" aria-label="Twitter">
-                        <i class="bi bi-twitter-x"></i>
-                    </a>
-                    <a href="https://www.youtube.com/c/mallofamerica" class="text-white" aria-label="YouTube">
-                        <i class="bi bi-youtube"></i>
-                    </a>
-                </article>
-
-            </div>
-
-            <article class="text-center mt-3 border-top pt-3">
-                <small>&copy; 2025 Mall of America. Todos los derechos reservados.</small>
-            </article>
+    <footer class="footer">
+        <div class="footer-div">
+            <header class="footer-header">
+            <img src="assets/imagenes/logoMallOfAmerica.png" alt="">
+            <h2>Centro comercial de América</h2>
+            <p>2131 Lindau Lane<br/>Bloomington, MN 55425<br/>952.883.8800</p>
+        </header>
+        <section class="footer-section1">
+            <h3>Ponte en Contacto con nosotros:</h3>
+            <a href="contacto.html">Contáctanos</a>
         </section>
+        <section class="footer-section2">
+            <h3>Síguenos en nuestras redes sociales</h3>
+            <nav>
+                <ul>
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com/mallofamerica/"><i class="fi fi-brands-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.tiktok.com/@mallofamerica"><i class="fi fi-brands-tik-tok"></i></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://x.com/mallofamerica"><i class="fi fi-brands-twitter-alt"></i></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.youtube.com/user/OfficialMOA"><i class="fi fi-brands-youtube"></i></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://open.spotify.com/show/76m6c7As1Gh6TfvyNBKBz1"><i class="fi fi-brands-spotify"></i></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/MallofAmerica/"><i class="fi fi-brands-facebook"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        </div>
+        <p class="p-footer">&copy; 2025 Mall of America. Todos los derechos reservados.</p>
     </footer>
 
 </body>
